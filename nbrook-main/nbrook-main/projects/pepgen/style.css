@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Source+Sans+Pro:wght@700&family=Stoke&display=swap");
+
+:root {
+  font-size: 1.7vw;
+}
+
+body {
+  user-select: none;
+  background: #edecde;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  border: 0.125rem solid #d9ac26;
+}
+
+#title,
+#subtitle,
+#button {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.375rem;
+  color: #211d08;
+  text-shadow: -0.05rem 0.05rem 0 white, -0.125rem 0.15625rem 0 #93ccb4, -0.1875rem 0.21875rem 0 #93ccb4, -0.25rem 0.28125rem 0 #93ccb4;
+}
+
+#subtitle {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 0.8125rem;
+  letter-spacing: 0.125rem;
+  font-stretch: 10%;
+  color: #c66a39;
+}
+
+#lists_container {
+  font-family: "Stoke", serif;
+  display: flex;
+  gap: 0.25rem;
+  letter-spacing: -0.03125rem;
+  height: 1.5rem;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+#lists_container ul {
+  --i: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transform: translateY(calc(var(--i) * -1.5em));
+  transition: 400ms transform;
+}
+
+#lists_container ul li {
+  list-style: none;
+  height: 1.5em;
+  white-space: nowrap;
+}
+
+#button {
+  font-family: "Maven Pro", sans-serif;
+  color: #c66a39;
+  background-color: #d9d9b5;
+  padding: 0.375rem 0.75rem;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  border-radius: 0.125rem;
+  box-shadow: 0rem 0rem 0 #c66a39, 0rem 0rem 0 #c66a39;
+  transition: 100ms box-shadow;
+}
+
+#button:hover {
+  box-shadow: -0.0625rem 0.0625rem 0 #c66a39, -0.125rem 0.125rem 0 #c66a39;
+}
+
+#button:active {
+  color: #d88d64;
+  background-color: #e0e0b8;
+  box-shadow: -0.0625rem 0.0625rem 0 #d88d64, -0.125rem 0.125rem 0 #d88d64;
+}
+
+.footer {
+  font-family: "Maven Pro", sans-serif;
+  color: #ababab;
+  text-decoration: none;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.footer> :not(:last-child) {
+  border-right: 0.0625rem solid #a6a6a6;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+
+.strong {
+  color: #7a7a7a;
+}

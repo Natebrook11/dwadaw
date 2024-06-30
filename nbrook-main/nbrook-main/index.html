@@ -1,0 +1,820 @@
+<!--  This site was created by Nate Brook junior software enginner -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Home — Nate Brook.</title>
+
+    <link rel="icon" href="/assets/img/logo.png" type="image/png">
+
+    <meta name="description"
+        content="Welcome to my portfolio, where you'll find my work, projects, and some personal information." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:url" content="https://nbrook.netlify.app" />
+    <meta property="og:title" content="Nate Brook - Junior Software Engineer" />
+    <meta property="og:description"
+        content="Welcome to my portfolio, where you'll find my work, projects, and some personal information." />
+    <meta property="og:site_name" content="Nate Brook" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/img/4.png" />
+    <link rel="canonical" href="https://nbrook.netlify.app" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP0JMWG7S6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('set', 'page', window.location.pathname);
+        gtag('send', 'pageview');
+
+        gtag('config', 'G-ZP0JMWG7S6');
+    </script>
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+    <link href="/assets/css/loconative-scroll.min.css" rel="stylesheet">
+    <link href="/assets/css/styleguide.css" rel="stylesheet">
+    <link href="/assets/css/components.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css" />
+
+</head>
+
+<body data-barba="wrapper" data-theme-page="dark" data-navigation-status="not-active" data-theme-nav="dark"
+    data-document-random-title="We miss you 😭 — Nate Brook.">
+
+    <div class="cookie-jar-group" data-theme-item="dark">
+        <div class="cookie-jar" id="cookie-jar" data-role="cookie-jar-pop-up">
+            <div class="row row-content">
+                <div class="col">
+                    <h4 data-nosnippet="">We use cookies <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
+                            <path
+                                d="M21.598 11.064a1.006 1.006 0 0 0-.854-.172A2.938 2.938 0 0 1 20 11c-1.654 0-3-1.346-3.003-2.937.005-.034.016-.136.017-.17a.998.998 0 0 0-1.254-1.006A2.963 2.963 0 0 1 15 7c-1.654 0-3-1.346-3-3 0-.217.031-.444.099-.716a1 1 0 0 0-1.067-1.236A9.956 9.956 0 0 0 2 12c0 5.514 4.486 10 10 10s10-4.486 10-10c0-.049-.003-.097-.007-.16a1.004 1.004 0 0 0-.395-.776zM12 20c-4.411 0-8-3.589-8-8a7.962 7.962 0 0 1 6.006-7.75A5.006 5.006 0 0 0 15 9l.101-.001a5.007 5.007 0 0 0 4.837 4C19.444 16.941 16.073 20 12 20z">
+                            </path>
+                            <circle cx="12.5" cy="11.5" r="1.5"></circle>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <circle cx="7.5" cy="12.5" r="1.5"></circle>
+                            <circle cx="15.5" cy="15.5" r="1.5"></circle>
+                            <circle cx="10.5" cy="16.5" r="1.5"></circle>
+                        </svg></h4>
+                    <p data-nosnippet="">We use <a href="/terms.html">cookies</a> to analyze
+                        our traffic.</p>
+                </div>
+            </div>
+            <div class="row row-buttons">
+                <div class="col">
+                    <div class="btn btn-link" data-button-status>
+                        <div href="#" class="btn-click" data-role="cookie-jar-none">
+                            <div class="btn-content">
+                                <span onmouseenter="playsound('fx')" onclick="playsound('1')"
+                                    data-nosnippet="">Decline</span>
+                            </div>
+                            <div class="btn-line">
+                                <div class="btn-line-item" data-line-status="active">
+                                    <svg width="131" height="8" viewBox="0 0 131 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="132" height="5" viewBox="0 0 132 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B"
+                                            stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn-primary" data-button-status>
+                        <div class="btn-click acceptbutton" data-role="cookie-jar-all">
+                            <div class="btn-content">
+                                <span onmouseenter="playsound('fx')" onclick="playsound('1')"
+                                    data-nosnippet="">Accept</span>
+                            </div>
+                            <div class="btn-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <polyline points="14 19 21 12 14 5" fill="none" stroke="#000"
+                                        stroke-miterlimit="10" />
+                                    <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000"
+                                        stroke-miterlimit="10" />
+                                </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <polyline points="14 19 21 12 14 5" fill="none" stroke="#000"
+                                        stroke-miterlimit="10" />
+                                    <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000"
+                                        stroke-miterlimit="10" />
+                                </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <polyline points="14 19 21 12 14 5" fill="none" stroke="#000"
+                                        stroke-miterlimit="10" />
+                                    <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000"
+                                        stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="transition-container" data-transition-status="loading">
+        <div class="transition-screen">
+            <div class="transition-screen-inner">
+                <div class="fixed-background primary">
+                    <div class="texture"></div>
+                </div>
+                <div class="overlay a-shape-pattern"></div>
+                <div class="transition-words">
+                    <div class="single-word" data-transition-word-status="active">
+                    </div>
+                    <div style='font-family: "Indie Flower", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                    <div style='font-family: "Lobster", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                    <div style='font-family: "Roboto", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                    <div style='font-family: "Pacifico", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                    <div style='font-family: "Courgette", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                    <div style='font-family: "Shadows Into Light", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                    <div style='font-family: "Great Vibes", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                    <div style='font-family: "Kaushan Script", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                    <div style='font-family: "Quicksand", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                    <div style='font-family: "Playfair display", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                    <div style='font-family: "Homemade Apple", cursive;' class="single-word"
+                        data-transition-word-status="not-active">
+                        <span>Nate Brook</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="transition-screen-duplicate">
+            <div class="transition-screen-duplicate-inner">
+                <div class="fixed-background gray">
+                    <div class="texture"></div>
+                </div>
+                <div class="overlay a-shape-pattern loading-remove"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-cursor" data-cursor-init="false" data-cursor-bubble="not-active" data-cursor-gif="not-active"
+        data-cursor-background="primary" data-cursor-status-move="not-active" data-cursor-status-drag="not-active">
+        <div class="cursor-bubble">
+            <div class="cursor-before"></div>
+            <div class="cursor-background"></div>
+            <span class="cursor-text">View</span>
+            <span class="cursor-text-drag">Drag</span>
+        </div>
+        <div class="cursor-drag-dot left"></div>
+        <div class="cursor-drag-dot right"></div>
+    </div>
+
+    <main class="main" data-barba="container" data-barba-namespace="home">
+        <div class="fixed-background dark">
+            <div class="texture"></div>
+        </div>
+        <nav class="navigation" data-theme-item="dark">
+            <div class="main-navigation">
+                <div class="overlay main-navigation-inner">
+
+                    <div class="fixed-background dark">
+                        <div class="texture"></div>
+                    </div>
+
+                    <div class="row split">
+                        <div class="col col-images">
+                            <div class="stacked-images">
+                                <div data-stacked-image-id="page://d4OLKcKFsAzBUvbu"
+                                    data-stacked-image-status="not-active" data-link-status="not-active"
+                                    class="single-stacked-image">
+                                    <picture class="overlay">
+                                        <img alt="" class="lazy"
+                                            src="https://images.pexels.com/photos/9976568/pexels-photo-9976568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            srcset="https://images.pexels.com/photos/9976568/pexels-photo-9976568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 400w, https://images.pexels.com/photos/9976568/pexels-photo-9976568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1440w"
+                                            width="1053" height="1403" />
+                                    </picture>
+                                    <h4>Work</h4>
+                                </div>
+                                <div data-stacked-image-id="page://ixKpCGOlm0vchq1R"
+                                    data-stacked-image-status="not-active" data-link-status="not-active"
+                                    class="single-stacked-image">
+                                    <picture class="overlay">
+                                        <img alt="" class="lazy"
+                                            src="https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            width="985" height="1378" />
+                                    </picture>
+                                    <h4>Contact</h4>
+                                </div>
+                                <div data-stacked-image-id="page://hWohA4TcSjn6Apav" data-stacked-image-status="active"
+                                    data-link-status="active" class="single-stacked-image">
+                                    <picture class="overlay">
+                                        <source type="image/webp"
+                                            srcset="https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 400w, https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1080w, https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1440w" />
+                                        <img alt="" class="lazy"
+                                            src="https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            srcset="https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 400w, https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1080w, https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1440w"
+                                            width="810" height="1080" />
+                                    </picture>
+                                    <h4>Home</h4>
+                                </div>
+                                <div data-stacked-image-id="page://xDncCFUu5hl06C5f"
+                                    data-stacked-image-status="not-active" data-link-status="not-active"
+                                    class="single-stacked-image">
+                                    <picture class="overlay">
+                                        <source type="image/webp"
+                                            srcset="https://media.discordapp.net/attachments/1010545343315837070/1146439482757877800/1693402862753.webp?width=395&height=702 400w, https://media.discordapp.net/attachments/1010545343315837070/1146439482757877800/1693402862753.webp?width=395&height=702 1440w" />
+                                        <img alt="" class="lazy" src="/img/Me.png"
+                                            srcset="/Me.png 400w, /Me.png 540w, /Me.png 720w, /Me.png 1080w, /Me.png 1440w"
+                                            width="810" height="1080" />
+                                    </picture>
+                                    <h4>About</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="col col-ul">
+                            <li data-nav-id="page://hWohA4TcSjn6Apav" data-link-status="active">
+                                <a href="/index.html" data-transition-text="Home">
+                                    <h3 onmouseenter="playsound('fx')" onclick="playsound('1')">
+                                        <span class="split-chars first">Home</span>
+                                        <span class="split-chars second">Home</span>
+                                    </h3>
+                                </a>
+                            </li>
+                            <li data-nav-id="page://d4OLKcKFsAzBUvbu" data-link-status="not-active">
+                                <a href="/work.html" data-transition-text="Work">
+                                    <h3 onmouseenter="playsound('fx')" onclick="playsound('1')">
+                                        <span class="split-chars first">Work</span>
+                                        <span class="split-chars second">Work</span>
+                                    </h3>
+                                </a>
+                            </li>
+                            <li data-nav-id="page://xDncCFUu5hl06C5f" data-link-status="not-active">
+                                <a href="/about.html" data-transition-text="About">
+                                    <h3 onmouseenter="playsound('fx')" onclick="playsound('1')">
+                                        <span class="split-chars first">About Me</span>
+                                        <span class="split-chars second">About Me</span>
+                                    </h3>
+                                </a>
+                            </li>
+                            <li data-nav-id="page://ixKpCGOlm0vchq1R" data-link-status="not-active">
+                                <a href="/contact.html" data-transition-text="Contact">
+                                    <h3 onmouseenter="playsound('fx')" onclick="playsound('1')">
+                                        <span class="split-chars first">Contact</span>
+                                        <span class="split-chars second">Contact</span>
+                                    </h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom-links">
+                        <div class="btn btn-link" data-button-status>
+                            <a href="/terms.html" class="btn-click" data-transition-text="General Terms">
+                                <div class="btn-content">
+                                    <span>General Terms</span>
+                                </div>
+                                <div class="btn-line">
+                                    <div class="btn-line-item" data-line-status="active">
+                                        <svg width="133" height="7" viewBox="0 0 133 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                                                stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="btn-line-item" data-line-status="">
+                                        <svg width="135" height="5" viewBox="0 0 135 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                                                stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="btn-line-item" data-line-status="">
+                                        <svg width="132" height="6" viewBox="0 0 132 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B"
+                                                stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="btn-line-item" data-line-status="">
+                                        <svg width="131" height="8" viewBox="0 0 131 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                                                stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="btn-line-item" data-line-status="">
+                                        <svg width="132" height="6" viewBox="0 0 132 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                                                stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="btn-line-item" data-line-status="">
+                                        <svg width="132" height="5" viewBox="0 0 132 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                                                stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="btn btn-link" data-button-status>
+                            <a href="https://www.instagram.com/_nbrook_/" target="_blank" class="btn-click">
+                                <div class="btn-content">
+                                    <span>Report a Bug</span>
+                                </div>
+                                <div class="btn-line">
+                                    <div class="btn-line-item" data-line-status="active">
+                                        <svg width="131" height="8" viewBox="0 0 131 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                                                stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="btn-line-item" data-line-status="">
+                                        <svg width="133" height="7" viewBox="0 0 133 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                                                stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="btn-line-item" data-line-status="">
+                                        <svg width="132" height="5" viewBox="0 0 132 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                                                stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="btn-line-item" data-line-status="">
+                                        <svg width="132" height="6" viewBox="0 0 132 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B"
+                                                stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="btn-line-item" data-line-status="">
+                                        <svg width="132" height="6" viewBox="0 0 132 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                                                stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="btn-line-item" data-line-status="">
+                                        <svg width="135" height="5" viewBox="0 0 135 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                                                stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-navigation-duplicate">
+                <div class="overlay main-navigation-inner-duplicate">
+                    <div class="fixed-background primary">
+                        <div class="texture"></div>
+                    </div>
+                    <div class="overlay a-shape-pattern"></div>
+                </div>
+            </div>
+            <div class="main-navigation-duplicate-duplicate">
+                <div class="overlay main-navigation-inner-duplicate-duplicate">
+                    <div class="fixed-background gray">
+                        <div class="texture"></div>
+                    </div>
+                </div>
+            </div>
+            <a class="logo">
+                <span id="timer"></span>
+            </a>
+            <div onmouseenter="playsound('fx')" onclick="playsound('1')" class="hamburger"
+                data-navigation-toggle="toggle">
+                <div class="bar first"></div>
+                <div class="bar middle"></div>
+                <div class="bar last"></div>
+            </div>
+        </nav>
+        <div class="main-wrap" data-scroll-container>
+            <header class="section default-header full-height all-devices home-header" data-theme-section="dark"
+                data-scroll-section data-vimeo-status-both-loaded="false">
+                <div style="filter: blur(80px);" class="overlay single-background">
+                    <picture class="overlay overlay-image" data-scroll data-scroll-speed="-5"
+                        data-scroll-position="top">
+                        <img alt="" class="lazy" src="/assets/img/4.png" data-src="/assets/img/4.png" width="1920"
+                            height="1440" />
+                    </picture>
+                    <div class="overlay overlay-fade"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div data-scroll data-scroll-speed="-2" data-scroll-position="top" class="col">
+                            <svg width="100%" viewBox="0 0 1198 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M678.2 94C646.2 94 621.7 86.2 604.7 70.6C587.9 55 579.5 29.8 579.5 -5.00001C579.5 -29 583.3 -48.3 590.9 -62.9C598.5 -77.7 609.6 -88.4 624.2 -95C639 -101.8 657 -105.2 678.2 -105.2C699.4 -105.2 717.3 -101.8 731.9 -95C746.7 -88.4 757.9 -77.7 765.5 -62.9C773.1 -48.3 776.9 -29 776.9 -5.00001C776.9 29.8 768.4 55 751.4 70.6C734.4 86.2 710 94 678.2 94ZM678.2 46C692.6 46 703 42 709.4 34C716 25.8 719.3 12.8 719.3 -5.00001C719.3 -24 716 -37.4 709.4 -45.2C703 -53.2 692.6 -57.2 678.2 -57.2C663.8 -57.2 653.3 -53.2 646.7 -45.2C640.3 -37.4 637.1 -24 637.1 -5.00001C637.1 12.8 640.3 25.8 646.7 34C653.3 42 663.8 46 678.2 46ZM890.602 94C858.602 94 834.102 86.2 817.102 70.6C800.302 55 791.902 29.8 791.902 -5.00001C791.902 -29 795.702 -48.3 803.302 -62.9C810.902 -77.7 822.002 -88.4 836.602 -95C851.402 -101.8 869.402 -105.2 890.602 -105.2C911.802 -105.2 929.702 -101.8 944.302 -95C959.102 -88.4 970.302 -77.7 977.902 -62.9C985.502 -48.3 989.302 -29 989.302 -5.00001C989.302 29.8 980.802 55 963.802 70.6C946.802 86.2 922.402 94 890.602 94ZM890.602 46C905.002 46 915.402 42 921.802 34C928.402 25.8 931.702 12.8 931.702 -5.00001C931.702 -24 928.402 -37.4 921.802 -45.2C915.402 -53.2 905.002 -57.2 890.602 -57.2C876.202 -57.2 865.702 -53.2 859.102 -45.2C852.702 -37.4 849.502 -24 849.502 -5.00001C849.502 12.8 852.702 25.8 859.102 34C865.702 42 876.202 46 890.602 46Z"
+                                    fill="white" />
+                                <path
+                                    d="M678.2 307C646.2 307 621.7 299.2 604.7 283.6C587.9 268 579.5 242.8 579.5 208C579.5 184 583.3 164.7 590.9 150.1C598.5 135.3 609.6 124.6 624.2 118C639 111.2 657 107.8 678.2 107.8C699.4 107.8 717.3 111.2 731.9 118C746.7 124.6 757.9 135.3 765.5 150.1C773.1 164.7 776.9 184 776.9 208C776.9 242.8 768.4 268 751.4 283.6C734.4 299.2 710 307 678.2 307ZM678.2 259C692.6 259 703 255 709.4 247C716 238.8 719.3 225.8 719.3 208C719.3 189 716 175.6 709.4 167.8C703 159.8 692.6 155.8 678.2 155.8C663.8 155.8 653.3 159.8 646.7 167.8C640.3 175.6 637.1 189 637.1 208C637.1 225.8 640.3 238.8 646.7 247C653.3 255 663.8 259 678.2 259ZM890.602 307C858.602 307 834.102 299.2 817.102 283.6C800.302 268 791.902 242.8 791.902 208C791.902 184 795.702 164.7 803.302 150.1C810.902 135.3 822.002 124.6 836.602 118C851.402 111.2 869.402 107.8 890.602 107.8C911.802 107.8 929.702 111.2 944.302 118C959.102 124.6 970.302 135.3 977.902 150.1C985.502 164.7 989.302 184 989.302 208C989.302 242.8 980.802 268 963.802 283.6C946.802 299.2 922.402 307 890.602 307ZM890.602 259C905.002 259 915.402 255 921.802 247C928.402 238.8 931.702 225.8 931.702 208C931.702 189 928.402 175.6 921.802 167.8C915.402 159.8 905.002 155.8 890.602 155.8C876.202 155.8 865.702 159.8 859.102 167.8C852.702 175.6 849.502 189 849.502 208C849.502 225.8 852.702 238.8 859.102 247C865.702 255 876.202 259 890.602 259Z"
+                                    fill="white" />
+                                <path
+                                    d="M-1.5 190V-3.20002H46.5L119.4 99.1V-3.20002H175.8V190H127.5L54.9 88V190H-1.5ZM202.699 190V-3.20002H308.899C328.499 -3.20002 343.399 1.39998 353.599 10.6C363.799 19.8 368.899 33 368.899 50.2C368.899 60.2 366.999 68.6 363.199 75.4C359.599 82.2 354.799 87.6 348.799 91.6C356.999 94.8 363.499 99.5 368.299 105.7C373.299 111.7 375.799 120.7 375.799 132.7C375.799 150.9 370.199 165 358.999 175C347.799 185 331.899 190 311.299 190H202.699ZM256.999 73.9H293.599C307.399 73.9 314.299 67.7 314.299 55.3C314.299 49.1 312.599 44.4 309.199 41.2C305.999 38 300.299 36.4 292.099 36.4H256.999V73.9ZM256.999 150.7H295.999C303.599 150.7 309.199 149.1 312.799 145.9C316.399 142.7 318.199 137.4 318.199 130C318.199 123.8 316.399 119.1 312.799 115.9C309.199 112.7 303.199 111.1 294.799 111.1H256.999V150.7ZM396.938 190V-3.20002H497.438C513.238 -3.20002 526.138 -0.300012 536.138 5.5C546.338 11.3 553.938 19.4 558.938 29.8C563.938 40 566.438 51.9 566.438 65.5C566.438 78.5 563.138 90 556.538 100C550.138 109.8 541.538 117.3 530.738 122.5C532.938 124.3 534.838 126.5 536.438 129.1C538.038 131.5 539.838 134.9 541.837 139.3L564.038 190H505.238L484.838 143.5C483.238 139.9 481.238 137.4 478.838 136C476.638 134.4 473.438 133.6 469.238 133.6H453.338V190H396.938ZM453.338 90.4H483.038C491.238 90.4 497.538 88.3 501.938 84.1C506.538 79.7 508.838 73.5 508.838 65.5C508.838 48.5 500.838 40 484.838 40H453.338V90.4ZM1018.03 190V-3.20002H1074.43V64.9L1132.93 -3.20002H1197.13L1129.03 76L1201.93 190H1141.93L1094.23 112L1074.43 134.2V190H1018.03Z"
+                                    fill="white" />
+                            </svg>
+                            <div class="line">
+                                <hr><span>Nate Brook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overlay overlay-scroll" data-anchor-target="#work" data-cursor-bubble-text="Scroll"
+                    data-cursor-bubble-color="primary"></div>
+                <div class="bottom-links animate-h4" data-scroll>
+                    <div class="btn btn-link" data-button-status>
+                        <div class="btn-click" data-anchor-target="#work">
+                            <div class="btn-content">
+                                <span>Scroll Down</span>
+                            </div>
+                            <div class="btn-line">
+                                <div class="btn-line-item" data-line-status="active">
+                                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B"
+                                            stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="135" height="5" viewBox="0 0 135 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="131" height="8" viewBox="0 0 131 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="133" height="7" viewBox="0 0 133 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="132" height="5" viewBox="0 0 132 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn-link" data-button-status>
+                        <a href="/contact.html" class="btn-click" data-transition-text="Contact">
+                            <div class="btn-content">
+                                <span>Contact</span>
+                            </div>
+                            <div class="btn-line">
+                                <div class="btn-line-item" data-line-status="active">
+                                    <svg width="132" height="5" viewBox="0 0 132 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="135" height="5" viewBox="0 0 135 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="131" height="8" viewBox="0 0 131 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B"
+                                            stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="133" height="7" viewBox="0 0 133 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-line-item" data-line-status="">
+                                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                                            stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <section class="section section-intro section-intro-home" id="section-intro" data-theme-section="dark"
+                data-scroll-section>
+                <div class="marquee-group me-marquee">
+                    <div class="marquee" data-marquee-direction="left" data-marquee-status="normal"
+                        data-marquee-speed="10">
+                        <div class="marquee-scroll">
+                            <div class="marquee-content">
+                                <div class="marquee-item">
+                                    <h3><span class="split-chars animate-contact">Freelance
+                                            Designer & Developer</span>
+                                        <div class="bar animate-contact">
+                                            <div class="bar-inner">
+                                                <div class="bar-inner-inner"></div>
+                                            </div>
+                                        </div>
+                                    </h3>
+                                </div>
+                                <div class="marquee-item">
+                                    <h3><span class="split-chars animate-contact">Tech Enthusiast</span>
+                                        <div class="bar animate-contact">
+                                            <div class="bar-inner">
+                                                <div class="bar-inner-inner"></div>
+                                            </div>
+                                        </div>
+                                    </h3>
+                                </div>
+                                <div class="marquee-item">
+                                    <h3><span class="split-chars animate-contact">Cyclist</span>
+                                        <div class="bar animate-contact">
+                                            <div class="bar-inner">
+                                                <div class="bar-inner-inner"></div>
+                                            </div>
+                                        </div>
+                                    </h3>
+                                </div>
+                                <div class="marquee-item">
+                                    <h3><span class="split-chars animate-contact">Student</span>
+                                        <div class="bar animate-contact">
+                                            <div class="bar-inner">
+                                                <div class="bar-inner-inner"></div>
+                                            </div>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section container" id="section" data-theme-section="dark" data-scroll-section>
+                <img class="make-it-img" src="/assets/img/61.png" alt="">
+                <h1 class="ultra">Let's make it <br> become real</h1>
+            </section>
+            <section id="work" class="section section-work section-home-work container" data-theme-section="dark"
+                data-scroll-section>
+                <h1 class="fraunces">Featured Work</h1>
+                <p>This are some of my fauvorite work I have done wet!</p>
+                <div class="home-work-grid">
+                    <a href="" data-cursor-bubble-text="View" class="box">
+                        <img src="/assets/img/antigradients-02.png" loop autoplay class="background"></img>
+
+                        <div class="pin-row">
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                        </div>
+
+                    </a>
+                    <a href="" data-cursor-bubble-text="View" class="box">
+                        <img src="/assets/img/glitch_cropped.gif" loop autoplay class="background"></img>
+
+                        <div class="pin-row">
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                        </div>
+                    </a>
+                    <a href="" data-cursor-bubble-text="View" class="box">
+                        <img src="/assets/img/glitch_cropped.gif" loop autoplay class="background"></img>
+
+                        <div class="pin-row">
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                        </div>
+                    </a>
+                    <a href="" data-cursor-bubble-text="View" class="box">
+                        <img src="/assets/img/antigradients-02.png" loop autoplay class="background"></img>
+
+                        <div class="pin-row">
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                        </div>
+                    </a>
+                    <a href="" data-cursor-bubble-text="View" class="box">
+                        <img src="/assets/img/antigradients-02.png" loop autoplay class="background"></img>
+
+                        <div class="pin-row">
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                            <div class="pin"><span>Html</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn btn-primary" data-button-status>
+                    <a href="/work.html" class="btn-click">
+                        <div class="btn-content">
+                            <span>All my work</span>
+                        </div>
+                        <div class="btn-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                                <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                            </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                                <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                            </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                                <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section style="background-color: aquamarine;" class="section container" id="section" data-theme-section="dark" data-scroll-section>
+                <div class="container large">
+                    <div class="flickity-slider-group" data-flickity-slider-type="cards"
+                        data-flickity-slider-status="not-sliding" data-flickity-scroll-user-status="not-scrolling"
+                        data-flickity-active-slide="0" style="--slides-amount: 10;"
+                        data-flickity-slider-first-drag="false">
+                        <div class="circle"></div>
+                        <ul class="flickity-carousel">
+                            <li class="flickity-slide" data-cursor-bubble-text="View"
+                                data-cursor-bubble-color="secondary">
+                                <a class="single-work-item" href="/projects/emojarts.html">
+                                    <div class="overlay tile">
+                                        <div class="overlay tile-inner">
+                                            <picture class="overlay">
+                                                <img alt="" class="lazy" src="/assets/img/antigradients-02.png"
+                                                    width="1080" height="810" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="flickity-slide" data-cursor-bubble-text="View"
+                                data-cursor-bubble-color="secondary">
+                                <a class="single-work-item" href="/projects/emojarts.html">
+                                    <div class="overlay tile">
+                                        <div class="overlay tile-inner">
+                                            <picture class="overlay">
+                                                <img alt="" class="lazy" src="/assets/img/antigradients-02.png"
+                                                    width="1080" height="810" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="flickity-slide" data-cursor-bubble-text="View"
+                                data-cursor-bubble-color="secondary">
+                                <a class="single-work-item" href="/projects/emojarts.html">
+                                    <div class="overlay tile">
+                                        <div class="overlay tile-inner">
+                                            <picture class="overlay">
+                                                <img alt="" class="lazy" src="/assets/img/antigradients-02.png"
+                                                    width="1080" height="810" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="flickity-slide" data-cursor-bubble-text="View"
+                                data-cursor-bubble-color="secondary">
+                                <a class="single-work-item" href="/projects/emojarts.html">
+                                    <div class="overlay tile">
+                                        <div class="overlay tile-inner">
+                                            <picture class="overlay">
+                                                <img alt="" class="lazy" src="/assets/img/antigradients-02.png"
+                                                    width="1080" height="810" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+
+    <script src="/assets/js/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/SplitText.min.js"></script>
+    <script src="/assets/js/loconative-scroll.min.js"></script>
+    <script defer src="/assets/js/index.js"></script>
+    <script src="/assets/js/com.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

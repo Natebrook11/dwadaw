@@ -1,0 +1,1707 @@
+<!DOCTYPE html><!--  This site was created by Nate Brook junior software enginner (Code by Nate)  -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Home — Nate Brook.</title>
+
+  <link rel="icon" href="/assets/img/logo.png" type="image/png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP0JMWG7S6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('set', 'page', window.location.pathname);
+    gtag('send', 'pageview');
+
+    gtag('config', 'G-ZP0JMWG7S6');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description"
+    content="Welcome to my portfolio, where you'll find my work, projects, and some personal information." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:url" content="https://nbrook.netlify.app" />
+  <meta property="og:title" content="Nate Brook - Junior Software Engineer" />
+  <meta property="og:description"
+    content="Welcome to my portfolio, where you'll find my work, projects, and some personal information." />
+  <meta property="og:site_name" content="Nate Brook" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg" />
+  <link rel="canonical" href="https://nbrook.netlify.app" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP0JMWG7S6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('set', 'page', window.location.pathname);
+    gtag('send', 'pageview');
+
+    gtag('config', 'G-ZP0JMWG7S6');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description"
+    content="Welcome to my portfolio, where you'll find my work, projects, and some personal information." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:url" content="https://nbrook.netlify.app" />
+  <meta property="og:title" content="Nate Brook - Junior Software Engineer" />
+  <meta property="og:description"
+    content="Welcome to my portfolio, where you'll find my work, projects, and some personal information." />
+  <meta property="og:site_name" content="Nate Brook" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg" />
+  <link rel="canonical" href="https://nbrook.netlify.app" />
+
+  <link rel="preload" as="font" href="/assets/fonts/bulevar-poster-webfont-transfonter.woff2" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" as="font" href="/assets/fonts/bulevar-regular-webfont-transfonter.woff2" type="font/woff2"
+    crossorigin="anonymous">
+
+  <link href="/assets/css/normalize.css" rel="stylesheet">
+  <link href="/assets/css/loconative-scroll.min.css" rel="stylesheet">
+  <link href="/assets/css/styleguide.css" rel="stylesheet">
+  <link href="/assets/css/components.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css" />
+
+</head>
+
+<body data-barba="wrapper" data-theme-page="dark" data-navigation-status="not-active" data-theme-nav="dark"
+  data-document-random-title="We miss you 😭 — Nate Brook.">
+  <audio id="audio" src="https://codeskulptor-demos.commondatastorage.googleapis.com/pang/pop.mp3"></audio>
+  <style>
+    /* ------------------------- Cookie Jar -------------------------------------------------- */
+
+    .cookie-jar-group {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+      z-index: 100;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: calc(var(--row-padding) - 4px) calc(var(--col-padding) - 4px);
+      pointer-events: none;
+    }
+
+    .cookie-jar {
+      background: var(--color-dark);
+      padding: 2em 2em 1.8em 2em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      max-width: 17em;
+      max-width: 25em;
+      font-size: 0.85em;
+      border-radius: calc(var(--border-radius) * 0.5);
+      pointer-events: all;
+      border: 1px solid rgba(var(--color-light-rgb), 0.1);
+      /* background: rgba(8, 8, 8, 1); */
+    }
+
+    .cookie-jar h4 {
+      margin-bottom: 0.2em;
+    }
+
+    .cookie-jar .row-content a {
+      position: relative;
+    }
+
+    .cookie-jar .row-content a::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(var(--color-light-rgb), 0.2);
+      left: 0;
+      transition: background-color var(--animation-fast);
+    }
+
+
+    .cookie-jar .row-content a:hover::after {
+      background-color: var(--color-primary);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+
+    .cookie-jar .row-buttons .col {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 1em;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .cookie-jar {
+        font-size: 1em;
+      }
+    }
+
+    @media screen and (max-width: 540px) {
+      .cookie-jar-group {
+        justify-content: center;
+      }
+    }
+  </style>
+
+  <div class="cookie-jar-group" data-theme-item="dark" style="z-index: 9;">
+    <div class="cookie-jar" id="cookie-jar" data-role="cookie-jar-pop-up">
+      <div class="row row-content">
+        <div class="col">
+          <h4 data-nosnippet="">We use cookies <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
+              <path
+                d="M21.598 11.064a1.006 1.006 0 0 0-.854-.172A2.938 2.938 0 0 1 20 11c-1.654 0-3-1.346-3.003-2.937.005-.034.016-.136.017-.17a.998.998 0 0 0-1.254-1.006A2.963 2.963 0 0 1 15 7c-1.654 0-3-1.346-3-3 0-.217.031-.444.099-.716a1 1 0 0 0-1.067-1.236A9.956 9.956 0 0 0 2 12c0 5.514 4.486 10 10 10s10-4.486 10-10c0-.049-.003-.097-.007-.16a1.004 1.004 0 0 0-.395-.776zM12 20c-4.411 0-8-3.589-8-8a7.962 7.962 0 0 1 6.006-7.75A5.006 5.006 0 0 0 15 9l.101-.001a5.007 5.007 0 0 0 4.837 4C19.444 16.941 16.073 20 12 20z">
+              </path>
+              <circle cx="12.5" cy="11.5" r="1.5"></circle>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <circle cx="7.5" cy="12.5" r="1.5"></circle>
+              <circle cx="15.5" cy="15.5" r="1.5"></circle>
+              <circle cx="10.5" cy="16.5" r="1.5"></circle>
+            </svg></h4>
+          <p data-nosnippet="">We use <a href="/terms.html">cookies</a> to analyze
+            our traffic.</p>
+        </div>
+      </div>
+      <div class="row row-buttons">
+        <div class="col">
+          <div class="btn btn-link" data-button-status>
+            <div href="#" class="btn-click" data-role="cookie-jar-none">
+              <div class="btn-content">
+                <span onclick="playsound('1')" data-nosnippet="">Decline</span>
+              </div>
+              <div class="btn-line">
+                <div class="btn-line-item" data-line-status="active">
+                  <svg width="131" height="8" viewBox="0 0 131 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="132" height="5" viewBox="0 0 132 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="133" height="7" viewBox="0 0 133 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="135" height="5" viewBox="0 0 135 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn btn-primary" data-button-status>
+            <div class="btn-click acceptbutton" data-role="cookie-jar-all">
+              <div class="btn-content">
+                <span onclick="playsound('1')" data-nosnippet="">Accept</span>
+              </div>
+              <div class="btn-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                  <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                  <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                  <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="player2" class="cookie-jar-group music-player-2" data-theme-item="dark" style="z-index: 1;">
+    <div class="cookie-jar" id="cookie-jar" data-role="cookie-jar-pop-up">
+      <label onclick="toggleplayer()" class="player-menu-hamburger">
+        <input type="checkbox" checked>
+        <svg viewBox="0 0 32 32">
+          <path class="player-menu-line player-menu-line-top-bottom"
+            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+          </path>
+          <path class="player-menu-line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+      <div class="row row-content">
+        <div class="col">
+          <audio id="music" src="/metaverse-173498.mp3" loop></audio>
+          <label class="play-pause-button-player-2">
+            <input id="play-pause" checked="checked" type="checkbox">
+            <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="play">
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z">
+              </path>
+            </svg>
+            <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="pause">
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z">
+              </path>
+            </svg></label>
+          <label class="volume-slider-music">
+            <input id="volume" min="0" max="1" step="0.05" type="range" class="level"
+              oninput="adjustVolume(this.value)">
+            <label onclick="mute()" class="mute-player-2 volume">
+              <input checked="checked" type="checkbox">
+              <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="mute">
+                <path
+                  d="M301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3zM425 167l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z">
+                </path>
+              </svg>
+              <svg viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="voice">
+                <path
+                  d="M301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3zM412.6 181.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5z">
+                </path>
+              </svg></label>
+          </label>
+          <script>
+            const music = document.getElementById('music');
+            const playPauseButton = document.getElementById('play-pause');
+            const playerbox2 = document.getElementById('player2');
+
+            function play() {
+              music.volume = 0.5
+              music.play();
+            };
+
+            playPauseButton.addEventListener('click', () => {
+              if (music.paused) {
+                music.play();
+              } else {
+                music.pause();
+              }
+            });
+
+            function adjustVolume(volume) {
+              music.volume = volume;
+            };
+
+            function mute() {
+              music.volume = 0;
+              document.getElementById('volume').value = 0; // Set the slider value to 0
+            };
+
+            
+
+            function toggleplayer() {
+                playerbox2.style.display = 'none';
+            };
+
+            play()
+
+          </script>
+          <p style="text-align: center;" data-nosnippet="">Here is some <a href="/metaverse-173498.mp3">music</a> to have a better
+            experience. 😉</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  </div>
+  <div class="transition-container" data-transition-status="loading">
+    <div class="transition-screen">
+      <div class="transition-screen-inner">
+        <div class="fixed-background primary">
+          <div class="texture"></div>
+        </div>
+        <div class="overlay a-shape-pattern"></div>
+        <div class="transition-words">
+          <div class="single-word" data-transition-word-status="active">
+          </div>
+          <div class="single-word bulevar regular" data-transition-word-status="not-active">
+            <span>Nate Brook.</span>
+          </div>
+          <div class="single-word migra" data-transition-word-status="not-active">
+            <span>Nate Brook.</span>
+          </div>
+          <div class="single-word general-sans" data-transition-word-status="not-active">
+            <span>Nate Brook.</span>
+          </div>
+          <div class="single-word bulevar poster" data-transition-word-status="not-active">
+            <span>Nate Brook.</span>
+          </div>
+          <div class="single-word migra captials" data-transition-word-status="not-active">
+            <span>Nate Brook.</span>
+          </div>
+          <div class="single-word bulevar regular" data-transition-word-status="not-active">
+            <span>Nate Brook.</span>
+          </div>
+          <div class="single-word migra" data-transition-word-status="not-active">
+            <span>Nate Brook.</span>
+          </div>
+          <div class="single-word general-sans" data-transition-word-status="not-active">
+            <span>Nate Brook.</span>
+          </div>
+          <div class="single-word bulevar poster" data-transition-word-status="not-active">
+            <span>Nate Brook.</span>
+          </div>
+          <div class="single-word migra captials" data-transition-word-status="not-active">
+            <span>Nate Brook.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="transition-screen-duplicate">
+      <div class="transition-screen-duplicate-inner">
+        <div class="fixed-background gray">
+          <div class="texture"></div>
+        </div>
+        <div class="overlay a-shape-pattern loading-remove"></div>
+      </div>
+    </div>
+  </div>
+  <div class="custom-cursor" data-cursor-init="false" data-cursor-bubble="not-active" data-cursor-gif="not-active"
+    data-cursor-background="primary" data-cursor-status-move="not-active" data-cursor-status-drag="not-active">
+    <div class="cursor-bubble">
+      <div class="cursor-before"></div>
+      <div class="cursor-background"></div>
+      <span class="cursor-text">View</span>
+      <span class="cursor-text-drag">Drag</span>
+    </div>
+    <div class="cursor-drag-dot left"></div>
+    <div class="cursor-drag-dot right"></div>
+  </div>
+  <main class="main" data-barba="container" data-barba-namespace="home">
+    <div class="fixed-background dark">
+      <div class="texture"></div>
+    </div>
+    <nav class="navigation" data-theme-item="dark">
+      <div class="main-navigation">
+        <div class="overlay main-navigation-inner">
+          <div class="fixed-background dark">
+            <div class="texture"></div>
+          </div>
+
+          <div class="row split">
+            <div class="col col-images">
+              <div class="stacked-images">
+                <div data-stacked-image-id="page://d4OLKcKFsAzBUvbu" data-stacked-image-status="not-active"
+                  data-link-status="not-active" class="single-stacked-image">
+                  <picture class="overlay">
+                    <img alt="" class="lazy"
+                      src="https://images.pexels.com/photos/9976568/pexels-photo-9976568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      srcset="https://images.pexels.com/photos/9976568/pexels-photo-9976568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 400w, https://images.pexels.com/photos/9976568/pexels-photo-9976568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1440w"
+                      width="1053" height="1403" />
+                  </picture>
+                  <h4>Work</h4>
+                </div>
+                <div data-stacked-image-id="page://ixKpCGOlm0vchq1R" data-stacked-image-status="not-active"
+                  data-link-status="not-active" class="single-stacked-image">
+                  <picture class="overlay">
+                    <img alt="" class="lazy"
+                      src="https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      width="985" height="1378" />
+                  </picture>
+                  <h4>Contact</h4>
+                </div>
+                <div data-stacked-image-id="page://hWohA4TcSjn6Apav" data-stacked-image-status="active"
+                  data-link-status="active" class="single-stacked-image">
+                  <picture class="overlay">
+                    <source type="image/webp"
+                      srcset="https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 400w, https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1080w, https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1440w" />
+                    <img alt="" class="lazy"
+                      src="https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      srcset="https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 400w, https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1080w, https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1440w"
+                      width="810" height="1080" />
+                  </picture>
+                  <h4>Home</h4>
+                </div>
+                <div data-stacked-image-id="page://xDncCFUu5hl06C5f" data-stacked-image-status="not-active"
+                  data-link-status="not-active" class="single-stacked-image">
+                  <picture class="overlay">
+                    <source type="image/webp"
+                      srcset="https://media.discordapp.net/attachments/1010545343315837070/1146439482757877800/1693402862753.webp?width=395&height=702 400w, https://media.discordapp.net/attachments/1010545343315837070/1146439482757877800/1693402862753.webp?width=395&height=702 1440w" />
+                    <img alt="" class="lazy" src="/img/Me.png"
+                      srcset="/Me.png 400w, /Me.png 540w, /Me.png 720w, /Me.png 1080w, /Me.png 1440w" width="810"
+                      height="1080" />
+                  </picture>
+                  <h4>About</h4>
+                </div>
+              </div>
+            </div>
+            <ul class="col col-ul">
+              <li data-nav-id="page://hWohA4TcSjn6Apav" data-link-status="active">
+                <a href="/index.html" data-transition-text="Home" data-cursor-bubble-text="Home"
+                  data-cursor-bubble-color="secondary">
+                  <h3>
+                    <span class="split-chars first">Home</span>
+                    <span class="split-chars second">Home</span>
+                  </h3>
+                </a>
+              </li>
+              <li data-nav-id="page://d4OLKcKFsAzBUvbu" data-link-status="not-active">
+                <a href="/work.html" data-transition-text="Work" data-cursor-bubble-text="Work"
+                  data-cursor-bubble-color="secondary">
+                  <h3>
+                    <span class="split-chars first">Work</span>
+                    <span class="split-chars second">Work</span>
+                  </h3>
+                </a>
+              </li>
+              <li data-nav-id="page://xDncCFUu5hl06C5f" data-link-status="not-active">
+                <a href="/about.html" data-transition-text="About" data-cursor-bubble-text="About"
+                  data-cursor-bubble-color="secondary">
+                  <h3>
+                    <span class="split-chars first">About Me</span>
+                    <span class="split-chars second">About Me</span>
+                  </h3>
+                </a>
+              </li>
+              <li data-nav-id="page://ixKpCGOlm0vchq1R" data-link-status="not-active">
+                <a href="/contact.html" data-transition-text="Contact" data-cursor-bubble-text="Contact"
+                  data-cursor-bubble-color="secondary">
+                  <h3>
+                    <span class="split-chars first">Contact</span>
+                    <span class="split-chars second">Contact</span>
+                  </h3>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-links">
+            <div class="btn btn-link" data-button-status>
+              <a href="/terms.html" class="btn-click" data-transition-text="General Terms">
+                <div class="btn-content">
+                  <span>General Terms</span>
+                </div>
+                <div class="btn-line">
+                  <div class="btn-line-item" data-line-status="active">
+                    <svg width="133" height="7" viewBox="0 0 133 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="135" height="5" viewBox="0 0 135 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B" stroke-width="2"
+                        stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="131" height="8" viewBox="0 0 131 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="5" viewBox="0 0 132 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="btn btn-link" data-button-status>
+              <a href="https://www.instagram.com/_nbrook_/" target="_blank" class="btn-click">
+                <div class="btn-content">
+                  <span>Code by Nate</span>
+                </div>
+                <div class="btn-line">
+                  <div class="btn-line-item" data-line-status="active">
+                    <svg width="131" height="8" viewBox="0 0 131 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="133" height="7" viewBox="0 0 133 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="5" viewBox="0 0 132 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B" stroke-width="2"
+                        stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="135" height="5" viewBox="0 0 135 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-navigation-duplicate">
+        <div class="overlay main-navigation-inner-duplicate">
+          <div class="fixed-background primary">
+            <div class="texture"></div>
+          </div>
+          <div class="overlay a-shape-pattern"></div>
+        </div>
+      </div>
+      <div class="main-navigation-duplicate-duplicate">
+        <div class="overlay main-navigation-inner-duplicate-duplicate">
+          <div class="fixed-background gray">
+            <div class="texture"></div>
+          </div>
+        </div>
+      </div>
+      <a class="logo" href="/index.html" data-transition-text="Home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+          style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+          <path
+            d="M15.165 15.582c4.587-4.073 8.141-9.424 6.057-11.771-.661-.744-1.584-1.089-2.575-.983-.832.091-1.687.502-2.549 1.192a8.922 8.922 0 0 0-8.712.282 8.917 8.917 0 0 0-4.109 5.515 8.892 8.892 0 0 0 .306 5.325c-1.065 1.203-2.054 3.677-.823 5.063.517.581 1.257.841 2.147.841 2.707 0 6.808-2.399 10.258-5.464zm3.699-10.767c.358-.034.632.064.861.323.231.261.169.946-.252 1.929a9.059 9.059 0 0 0-1.617-1.853c.431-.262.776-.373 1.008-.399zM4.633 17.118a8.979 8.979 0 0 0 1.568 1.737c-1.025.303-1.714.283-1.945.021-.217-.243.002-1.069.377-1.758zm16.31-5.869c-1.215 1.797-2.906 3.671-4.778 5.333-1.934 1.719-4.066 3.208-6.05 4.202a9.082 9.082 0 0 0 1.874.212 8.986 8.986 0 0 0 4.616-1.282 8.915 8.915 0 0 0 4.338-8.465z">
+          </path>
+        </svg>
+      </a>
+      <div class="hamburger" data-navigation-toggle="toggle">
+        <div class="bar first"></div>
+        <div class="bar middle"></div>
+        <div class="bar last"></div>
+      </div>
+    </nav>
+    <div class="main-wrap" data-scroll-container>
+      <header class="section default-header full-height all-devices home-header" data-theme-section="dark"
+        data-scroll-section data-vimeo-status-both-loaded="false">
+        <div class="overlay single-background">
+          <picture class="overlay overlay-image overlay-image-mobile" data-scroll data-scroll-speed="-5"
+            data-scroll-position="top">
+            <img alt="" class="lazy" src="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg"
+              data-src="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg" width="1920"
+              height="1440" />
+          </picture>
+          <picture class="overlay overlay-image overlay-image-desktop" data-scroll data-scroll-speed="-5"
+            data-scroll-position="top">
+            <img alt="" class="lazy" src="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg"
+              data-src="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg" width="1920"
+              height="1440" />
+          </picture>
+          <div class="overlay overlay-fade"></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 style="letter-spacing: normal; font-weight: 600; font-family: 'Migra' !important;" class="split-chars animate-h1 desktop migra captials">Nate Brook.</h1>
+              <h1 style="letter-spacing: normal; font-weight: 600; font-family: 'Migra' !important;" class="split-chars animate-h1 mobile migra captials">Nate Brook.</h1>
+            </div>
+          </div>
+        </div>
+        <div class="shape-polygon">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1 style="letter-spacing: normal; font-weight: 600; font-family: 'Migra' !important;" class="split-chars animate-h1 desktop migra captials">Nate Brook.</h1>
+                <h1 style="letter-spacing: normal; font-weight: 600; font-family: 'Migra' !important;" class="split-chars animate-h1 mobile migra captials">Nate Brook.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay overlay-scroll" data-anchor-target="#section-intro" data-cursor-bubble-text="Scroll"
+          data-cursor-bubble-color="primary"></div>
+        <div class="bottom-links" data-scroll>
+          <div class="btn btn-link" data-button-status>
+            <div class="btn-click" data-anchor-target="#section-intro">
+              <div class="btn-content">
+                <span>Scroll Down</span>
+              </div>
+              <div class="btn-line">
+                <div class="btn-line-item" data-line-status="active">
+                  <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="135" height="5" viewBox="0 0 135 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="131" height="8" viewBox="0 0 131 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="133" height="7" viewBox="0 0 133 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="132" height="5" viewBox="0 0 132 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn btn-link" data-button-status>
+            <a href="/contact.html" class="btn-click" data-transition-text="Contact">
+              <div class="btn-content">
+                <span>Contact</span>
+              </div>
+              <div class="btn-line">
+                <div class="btn-line-item" data-line-status="active">
+                  <svg width="132" height="5" viewBox="0 0 132 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="135" height="5" viewBox="0 0 135 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="131" height="8" viewBox="0 0 131 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="133" height="7" viewBox="0 0 133 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="btn-line-item" data-line-status="">
+                  <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                      stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </header>
+      <section class="section section-intro section-intro-home" id="section-intro" data-theme-section="dark"
+        data-scroll-section>
+        <div class="container">
+          <div class="row split">
+            <div class="col">
+              <h3><span data-cursor-gif-target="file://P3ZdDG3Y6gHE4VQQ">Who is nbrook?</span></h3>
+              <div style="padding-bottom: 50px; text-align: left; width: 100%;" class="styled-content">
+                <p>or as <a target="_blank" href="https://www.instagram.com/martinurkolaruiz/"
+                    style="text-decoration: none !important;">@Martin</a> would say, Jabibi 🤑</p>
+              </div>
+            </div>
+          </div>
+          <div class="row split">
+            <div class="col" style="margin-top: -50px;">
+              <div class="draw-line" data-scroll data-svg-path-length>
+                <svg width="233" height="121" viewBox="0 0 233 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 1C24.1778 10.741 47.0701 20.9782 69.1085 33.1274C92.4583 45.9995 115.893 61.3548 132.06 83.0048C137.065 89.7066 142.941 98.5964 142.819 107.411C142.742 112.934 135.615 117.475 131.082 118.815C123.229 121.138 113.118 119.82 105.652 116.818C99.8574 114.489 89.8256 108.254 89.8256 100.977C89.8256 88.2399 117.102 86.4402 124.369 85.6229C160.566 81.5519 197.278 87.3847 232 97.3822"
+                    stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="col">
+              <div class="col-row">
+                <h4>
+                  a young enthusiast of computer science and technology. He started at the age of 10 when he
+                  had his first computer at home. Since then, he has been learning and gradually began to
+                  create his own digital applications.
+                </h4>
+              </div>
+              <div class="col-row styled-content">
+                <p>By Nate Brook </p>
+
+                <div class="col-row">
+                  <div class="btn btn-primary" data-button-status>
+                    <a href="/about.html" class="btn-click" data-transition-text="About us">
+                      <div class="btn-content">
+                        <span>About me</span>
+                      </div>
+                      <div class="btn-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                          <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                        </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                          <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                        </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                          <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: -100px;" class="section section-clients-marquee" data-theme-section="dark"
+        data-scroll-section>
+        <div style="text-align: center;" class="container full">
+          <div class="styled-content">
+            <p>These are some of the programming languages (12) I know and some of the apps that I use.</p>
+          </div>
+          <div class="marquee-group">
+            <div class="marquee" data-marquee-direction="left" data-marquee-status="normal" data-marquee-speed="20">
+              <div class="marquee-scroll" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
+                <div class="marquee-content">
+
+                  <div class="marquee-item">
+                    <img src="https://code.visualstudio.com/assets/images/code-stable-white.png" alt="volkswagen" />
+                    <span>Visual Studio Code</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"
+                      style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                      <path
+                        d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z">
+                      </path>
+                    </svg>
+                    <span>HTML5</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"
+                      style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                      <path
+                        d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z">
+                      </path>
+                    </svg>
+                    <span>CSS3</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                      <path
+                        d="M9.585 11.692h4.328s2.432.039 2.432-2.35V5.391S16.714 3 11.936 3C7.362 3 7.647 4.983 7.647 4.983l.006 2.055h4.363v.617H5.92s-2.927-.332-2.927 4.282 2.555 4.45 2.555 4.45h1.524v-2.141s-.083-2.554 2.513-2.554zm-.056-5.74a.784.784 0 1 1 0-1.57.784.784 0 1 1 0 1.57z">
+                      </path>
+                      <path
+                        d="M18.452 7.532h-1.524v2.141s.083 2.554-2.513 2.554h-4.328s-2.432-.04-2.432 2.35v3.951s-.369 2.391 4.409 2.391c4.573 0 4.288-1.983 4.288-1.983l-.006-2.054h-4.363v-.617h6.097s2.927.332 2.927-4.282-2.555-4.451-2.555-4.451zm-3.981 10.436a.784.784 0 1 1 0 1.57.784.784 0 1 1 0-1.57z">
+                      </path>
+                    </svg>
+                    <span>Python</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                      <circle cx="12" cy="11.245" r="1.785"></circle>
+                      <path
+                        d="m7.002 14.794-.395-.101c-2.934-.741-4.617-2.001-4.617-3.452 0-1.452 1.684-2.711 4.617-3.452l.395-.1.111.391a19.507 19.507 0 0 0 1.136 2.983l.085.178-.085.178c-.46.963-.841 1.961-1.136 2.985l-.111.39zm-.577-6.095c-2.229.628-3.598 1.586-3.598 2.542 0 .954 1.368 1.913 3.598 2.54.273-.868.603-1.717.985-2.54a20.356 20.356 0 0 1-.985-2.542zm10.572 6.095-.11-.392a19.628 19.628 0 0 0-1.137-2.984l-.085-.177.085-.179c.46-.961.839-1.96 1.137-2.984l.11-.39.395.1c2.935.741 4.617 2 4.617 3.453 0 1.452-1.683 2.711-4.617 3.452l-.395.101zm-.41-3.553c.4.866.733 1.718.987 2.54 2.23-.627 3.599-1.586 3.599-2.54 0-.956-1.368-1.913-3.599-2.542a20.683 20.683 0 0 1-.987 2.542z">
+                      </path>
+                      <path
+                        d="m6.419 8.695-.11-.39c-.826-2.908-.576-4.991.687-5.717 1.235-.715 3.222.13 5.303 2.265l.284.292-.284.291a19.718 19.718 0 0 0-2.02 2.474l-.113.162-.196.016a19.646 19.646 0 0 0-3.157.509l-.394.098zm1.582-5.529c-.224 0-.422.049-.589.145-.828.477-.974 2.138-.404 4.38.891-.197 1.79-.338 2.696-.417a21.058 21.058 0 0 1 1.713-2.123c-1.303-1.267-2.533-1.985-3.416-1.985zm7.997 16.984c-1.188 0-2.714-.896-4.298-2.522l-.283-.291.283-.29a19.827 19.827 0 0 0 2.021-2.477l.112-.16.194-.019a19.473 19.473 0 0 0 3.158-.507l.395-.1.111.391c.822 2.906.573 4.992-.688 5.718a1.978 1.978 0 0 1-1.005.257zm-3.415-2.82c1.302 1.267 2.533 1.986 3.415 1.986.225 0 .423-.05.589-.145.829-.478.976-2.142.404-4.384-.89.198-1.79.34-2.698.419a20.526 20.526 0 0 1-1.71 2.124z">
+                      </path>
+                      <path
+                        d="m17.58 8.695-.395-.099a19.477 19.477 0 0 0-3.158-.509l-.194-.017-.112-.162A19.551 19.551 0 0 0 11.7 5.434l-.283-.291.283-.29c2.08-2.134 4.066-2.979 5.303-2.265 1.262.727 1.513 2.81.688 5.717l-.111.39zm-3.287-1.421c.954.085 1.858.228 2.698.417.571-2.242.425-3.903-.404-4.381-.824-.477-2.375.253-4.004 1.841.616.67 1.188 1.378 1.71 2.123zM8.001 20.15a1.983 1.983 0 0 1-1.005-.257c-1.263-.726-1.513-2.811-.688-5.718l.108-.391.395.1c.964.243 2.026.414 3.158.507l.194.019.113.16c.604.878 1.28 1.707 2.02 2.477l.284.29-.284.291c-1.583 1.627-3.109 2.522-4.295 2.522zm-.993-5.362c-.57 2.242-.424 3.906.404 4.384.825.47 2.371-.255 4.005-1.842a21.17 21.17 0 0 1-1.713-2.123 20.692 20.692 0 0 1-2.696-.419z">
+                      </path>
+                      <path
+                        d="M12 15.313c-.687 0-1.392-.029-2.1-.088l-.196-.017-.113-.162a25.697 25.697 0 0 1-1.126-1.769 26.028 26.028 0 0 1-.971-1.859l-.084-.177.084-.179c.299-.632.622-1.252.971-1.858.347-.596.726-1.192 1.126-1.77l.113-.16.196-.018a25.148 25.148 0 0 1 4.198 0l.194.019.113.16a25.136 25.136 0 0 1 2.1 3.628l.083.179-.083.177a24.742 24.742 0 0 1-2.1 3.628l-.113.162-.194.017c-.706.057-1.412.087-2.098.087zm-1.834-.904c1.235.093 2.433.093 3.667 0a24.469 24.469 0 0 0 1.832-3.168 23.916 23.916 0 0 0-1.832-3.168 23.877 23.877 0 0 0-3.667 0 23.743 23.743 0 0 0-1.832 3.168 24.82 24.82 0 0 0 1.832 3.168z">
+                      </path>
+                    </svg>
+                    <span>React</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                      <path
+                        d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z">
+                      </path>
+                    </svg>
+                    <span>JS</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path
+                        d="M19.24 3H4.76A1.76 1.76 0 0 0 3 4.76v14.48A1.76 1.76 0 0 0 4.76 21h14.48A1.76 1.76 0 0 0 21 19.24V4.76A1.76 1.76 0 0 0 19.24 3zm-5.8 10h-2.25v6.44H9.4V13H7.15v-1.46h6.29zm5.8 5.28a1.71 1.71 0 0 1-.67.74 3 3 0 0 1-1 .39 5.81 5.81 0 0 1-1.2.12 7 7 0 0 1-1.23-.11 4.52 4.52 0 0 1-1-.33v-1.71l-.06-.06h.06v.07a3.41 3.41 0 0 0 1 .54 3.06 3.06 0 0 0 1.13.2 2.58 2.58 0 0 0 .6-.06 1.47 1.47 0 0 0 .42-.17.75.75 0 0 0 .25-.25.69.69 0 0 0-.06-.74 1.24 1.24 0 0 0-.35-.33 3.12 3.12 0 0 0-.53-.3l-.67-.28a3.57 3.57 0 0 1-1.37-1 2 2 0 0 1-.46-1.33 2.16 2.16 0 0 1 .24-1.06 2.09 2.09 0 0 1 .66-.71 2.88 2.88 0 0 1 1-.42 5.11 5.11 0 0 1 1.19-.13 7 7 0 0 1 1.09.07 4.53 4.53 0 0 1 .88.23v1.65a2.42 2.42 0 0 0-.42-.24 3.58 3.58 0 0 0-.49-.17 3 3 0 0 0-.49-.1 2.45 2.45 0 0 0-.46 0 2.29 2.29 0 0 0-.56.06 1.54 1.54 0 0 0-.43.16.78.78 0 0 0-.26.25.63.63 0 0 0-.09.33.62.62 0 0 0 .1.35 1.19 1.19 0 0 0 .3.29 2.15 2.15 0 0 0 .46.28l.63.28a6.56 6.56 0 0 1 .84.42 2.65 2.65 0 0 1 .64.49 1.79 1.79 0 0 1 .42.63 2.48 2.48 0 0 1 .14.85 2.68 2.68 0 0 1-.25 1.08z">
+                      </path>
+                    </svg>
+                    <span>typescript</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path
+                        d="M13.74 4.23c-.84-1-1.57-2-1.71-2.22H12c-.14.21-.87 1.22-1.71 2.22-7.2 9.19 1.14 15.39 1.14 15.39l.07.05c.06.95.22 2.33.22 2.33h.62s.15-1.37.21-2.33l.07-.06s8.32-6.19 1.12-15.38zM12 19.48a3.48 3.48 0 0 1-.48-.48L12 9l.45 10a3.57 3.57 0 0 1-.45.48z">
+                      </path>
+                    </svg>
+                    <span>MongoDB</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path
+                        d="M17.13 9.68 22 11.8v-.11c-.07-.24-.28-.45-.7-.87l-2-2-2.07.87zM12.2 7.24a1.31 1.31 0 0 1 .16.47l3 1.29a1.11 1.11 0 0 1 .29-.14l.48-3-2-2-1.95 3.3s0 .05.02.08zM10.61 7a1.1 1.1 0 0 1 1-.2h.05l2.16-3.34-.66-.66c-.42-.42-.63-.63-.87-.7a1 1 0 0 0-.63 0c-.24.07-.45.28-.87.7l-3 3c.31.14 2.5 1.06 2.78 1.19zm-3.12 5.29h.27a1.45 1.45 0 0 1 .29 0l2.38-3.68v-.06a1 1 0 0 1-.27-.95L9 7l-1.7-.73L5 8.61l2.51 3.66zm7.62-2.44v-.08a.59.59 0 0 1 0-.14l-2.86-1.27h-.05a1.05 1.05 0 0 1-.88.47h-.17s-.05 0-.06.05L8.73 12.5v.05l6.33-2.7s.05.02.05 0zm1.36-.91a.83.83 0 0 1 .26.19l2-.84-1.89-1.87-.4 2.47zm-2.29 5.54A.91.91 0 0 1 15 14v-.05l.54-3.37-.09-.08L9 13.15a2.76 2.76 0 0 1 .08.27zM2 11.95zm12.14 3.18L8.92 14v.06L13.47 21l.42-.43c.15-.92.71-4.33.78-4.72a.9.9 0 0 1-.53-.72zm1.65.32a.88.88 0 0 1-.36.27l-.64 3.94L18.43 16zm1.07-5.13a.07.07 0 0 0-.06 0 .92.92 0 0 1-.61.34v.06l-.55 3.4a.88.88 0 0 1 .34.62h.06l2.95.61 2.28-2.28a4.22 4.22 0 0 0 .65-.74zM8.3 14.59a1.27 1.27 0 0 1-.86 0l-1.22 1.9 4.69 4.68a2.68 2.68 0 0 0 .87.71 1 1 0 0 0 .63 0 1.86 1.86 0 0 0 .7-.54l-4.69-6.8zm4.71 6.82zm-6.62-7.82s.06 0 .06-.05 0 0-.06 0l-4.14-.86a7.07 7.07 0 0 0 .51.54l1.36 1.36 2.27-1zm.28-.66a1.05 1.05 0 0 1 .2-.27v-.06C6.1 11.4 5.3 10.24 4.5 9.07l-1.75 1.75c-.42.42-.63.63-.7.87A.75.75 0 0 0 2 12l4.67 1zm.17 1.33a.61.61 0 0 1-.07-.1L4.59 15l1.08 1.1 1.17-1.82s.01-.02 0-.02z">
+                      </path>
+                    </svg>
+                    <span>netlify</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path
+                        d="M9.37 17.51c-3.09.86 1.87 2.64 5.8 1a7.18 7.18 0 0 1-1.1-.54 11.59 11.59 0 0 1-4.16.18c-1.31-.15-.54-.64-.54-.64zm5.33-1.68a16.27 16.27 0 0 1-5.36.26c-1.31-.14-.45-.77-.45-.77-3.4 1.12 1.89 2.4 6.64 1a2.25 2.25 0 0 1-.83-.49zm1.82-9.73s-6.87 1.71-3.59 5.49a1.47 1.47 0 0 1-.25 2.12s2.46-1.27 1.33-2.86-1.86-2.22 2.51-4.75z">
+                      </path>
+                      <path
+                        d="M18.13 19.14s.56.46-.63.82c-2.27.69-9.43.9-11.42 0-.72-.31.62-.74 1-.83a2.54 2.54 0 0 1 .69-.08c-.8-.56-5.15 1.1-2.21 1.58 8.05 1.37 14.64-.56 12.57-1.49zm-2.76-4.88a7 7 0 0 1 .92-.49s-1.51.27-3 .4a28.11 28.11 0 0 1-4.82.05C6.09 13.91 9.74 13 9.74 13a6.81 6.81 0 0 0-3.16.75c-2.06 1.03 5.09 1.48 8.79.51zm.91 2.44a.39.39 0 0 1-.08.09c5-1.32 3.18-4.65.78-3.81a.71.71 0 0 0-.33.25s.14-.05.43-.12c1.22-.25 2.92 1.63-.8 3.59zM12 13c-.74-1.67-3.26-3.14 0-5.71C16.09 4.08 14 2 14 2c.84 3.31-3 4.31-4.34 6.37-.93 1.41.47 2.92 2.34 4.63z">
+                      </path>
+                      <path
+                        d="M16.41 21.32a29.75 29.75 0 0 1-9.14.14s.46.38 2.84.53c3.61.23 9.15-.12 9.29-1.83 0 0-.26.64-2.99 1.16z">
+                      </path>
+                    </svg>
+                    <span>Java</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path
+                        d="M3.79 10.17a.18.18 0 0 0-.11 0l-.2.27H7a.15.15 0 0 0 .1-.06l.17-.26v-.05zm-1.47.89a.14.14 0 0 0-.11 0l-.2.26v.05h4.6a.09.09 0 0 0 .09-.06l.08-.23v-.06zM4.6 12a.13.13 0 0 0-.1.06l-.13.24v.06h2.15a.08.08 0 0 0 .07-.07v-.23s0-.07-.06-.07zm15.99-3.07a3.62 3.62 0 0 0-2.78-.5 4.09 4.09 0 0 0-2.72 1.63 4 4 0 0 0-.67 1.26h-3.14a.25.25 0 0 0-.24.16c-.14.25-.37.76-.5 1.06s0 .29.18.29h1.88a2.8 2.8 0 0 1-.26.36 1.81 1.81 0 0 1-1.65.65 1.53 1.53 0 0 1-1.32-1.53 2.07 2.07 0 0 1 1-1.85 1.71 1.71 0 0 1 1.77-.15 1.36 1.36 0 0 1 .45.37c.13.15.14.14.29.1l1.63-.43c.12 0 .16-.08.1-.16a3 3 0 0 0-1.13-1.38 3.35 3.35 0 0 0-2.58-.47A4.31 4.31 0 0 0 8.16 10a3.81 3.81 0 0 0-.82 2.85A3 3 0 0 0 8.57 15a3.46 3.46 0 0 0 2.62.65A4.06 4.06 0 0 0 14 14a4.33 4.33 0 0 0 .41-.69 3 3 0 0 0 1 1.55 3.68 3.68 0 0 0 2.38.86c.25 0 .51 0 .78-.09a4.51 4.51 0 0 0 2.33-1.25A3.72 3.72 0 0 0 22 11.1a3 3 0 0 0-1.41-2.17zm-1.78 4.73a1.81 1.81 0 0 1-1.59.06 1.61 1.61 0 0 1-.9-1.84A2.12 2.12 0 0 1 18 10.19a1.59 1.59 0 0 1 2 1.29 2.91 2.91 0 0 1 0 .32 2.11 2.11 0 0 1-1.19 1.86z">
+                      </path>
+                    </svg>
+                    <span>GO</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path
+                        d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z">
+                      </path>
+                    </svg>
+                    <span>tailwind-css</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path
+                        d="M3.345 6.935c-1.756 2.523-1.538 5.806-.196 8.487l.098.19c.021.04.041.082.063.121.012.024.026.047.039.069a7.842 7.842 0 0 0 .198.344l.073.12a9.14 9.14 0 0 0 .211.33 10.179 10.179 0 0 0 .221.319l.036.049c.063.088.129.175.196.261l.074.094.182.223.069.082c.082.097.167.194.252.289l.005.005c.004.004.007.006.01.011.083.091.17.181.256.271l.083.083.205.201.084.08c.092.087.186.172.281.256l.004.004.049.041c.083.073.169.145.255.215l.105.084a11.03 11.03 0 0 0 .565.424c.029.021.057.042.087.062l.024.017c.076.053.154.103.231.153.033.022.066.045.101.067a10.975 10.975 0 0 0 .886.509c.065.034.129.068.195.101l.045.022.08.039c.102.048.205.097.308.143l.066.029c.119.052.239.102.36.149l.088.035a13.895 13.895 0 0 0 .382.142c.125.044.252.085.38.124l.092.028c.128.039.256.085.39.11 8.492 1.548 10.958-5.102 10.958-5.102-2.072 2.698-5.748 3.41-9.232 2.618-.132-.03-.261-.071-.39-.109l-.097-.029a10.929 10.929 0 0 1-.755-.264l-.093-.036c-.12-.047-.239-.097-.356-.148l-.071-.031a11.932 11.932 0 0 1-.301-.14l-.087-.042c-.078-.038-.155-.079-.232-.118-.051-.027-.104-.053-.155-.082a8.294 8.294 0 0 1-.278-.156l-.094-.052a11.4 11.4 0 0 1-.363-.223l-.098-.065a10.557 10.557 0 0 1-.259-.172l-.083-.059c-.082-.058-.164-.116-.244-.176a11.921 11.921 0 0 1-.328-.255l-.099-.079c-.092-.076-.184-.152-.274-.231a12.01 12.01 0 0 1-.319-.288c-.028-.026-.055-.051-.081-.078a7.985 7.985 0 0 1-.208-.203l-.081-.081a10.76 10.76 0 0 1-.254-.269l-.012-.012a11.75 11.75 0 0 1-.258-.293l-.067-.081a10.313 10.313 0 0 1-.254-.313 11.855 11.855 0 0 1-.215-.286C3.864 11.825 3.17 8.186 4.715 5.198">
+                      </path>
+                      <path
+                        d="M8.794 4.809c-1.27 1.827-1.2 4.273-.21 6.205.166.324.353.639.561.938.191.273.401.597.654.816.092.101.187.199.284.295l.076.074c.094.092.19.182.291.271l.011.01.003.002c.111.097.224.19.34.281l.078.06a8.281 8.281 0 0 0 .366.268c.053.037.108.072.161.107.026.017.051.035.078.051a7.14 7.14 0 0 0 .301.184c.076.044.155.087.233.13.026.015.055.029.082.043.055.028.108.057.163.083a9.645 9.645 0 0 0 .365.171l.074.031c.093.039.186.077.281.113l.117.044c.086.032.171.06.256.089l.117.037c.121.038.243.085.37.107 6.556 1.086 8.068-3.961 8.068-3.961-1.364 1.964-4.006 2.902-6.825 2.17a7.866 7.866 0 0 1-.743-.232l-.118-.043a7.629 7.629 0 0 1-.353-.145 8.79 8.79 0 0 1-.344-.159c-.057-.028-.113-.058-.17-.087l-.099-.051a9.352 9.352 0 0 1-.533-.313l-.08-.053a7.65 7.65 0 0 1-.602-.435c-1.234-.974-2.213-2.306-2.678-3.815-.488-1.566-.382-3.323.462-4.75">
+                      </path>
+                      <path
+                        d="M13.379 3.221c-.749 1.102-.823 2.469-.304 3.686.548 1.292 1.671 2.304 2.981 2.785a3.85 3.85 0 0 0 .234.079c.077.024.152.053.233.067 3.62.699 4.601-1.857 4.862-2.234-.86 1.239-2.306 1.536-4.078 1.105a5.403 5.403 0 0 1-.939-.344 5.39 5.39 0 0 1-.895-.545c-1.585-1.204-2.573-3.501-1.536-5.372">
+                      </path>
+                    </svg>
+                    <span>jquery</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+                      </path>
+                    </svg>
+                    <span>github</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path
+                        d="M12 21.985c-.275 0-.532-.074-.772-.202l-2.439-1.448c-.365-.203-.182-.277-.072-.314.496-.165.588-.201 1.101-.493.056-.037.129-.02.185.017l1.87 1.12c.074.036.166.036.221 0l7.319-4.237c.074-.036.11-.11.11-.202V7.768c0-.091-.036-.165-.11-.201l-7.319-4.219c-.073-.037-.165-.037-.221 0L4.552 7.566c-.073.036-.11.129-.11.201v8.457c0 .073.037.166.11.202l2 1.157c1.082.548 1.762-.095 1.762-.735V8.502c0-.11.091-.221.22-.221h.936c.108 0 .22.092.22.221v8.347c0 1.449-.788 2.294-2.164 2.294-.422 0-.752 0-1.688-.46l-1.925-1.099a1.55 1.55 0 0 1-.771-1.34V7.786c0-.55.293-1.064.771-1.339l7.316-4.237a1.637 1.637 0 0 1 1.544 0l7.317 4.237c.479.274.771.789.771 1.339v8.458c0 .549-.293 1.063-.771 1.34l-7.317 4.236c-.241.11-.516.165-.773.165zm2.256-5.816c-3.21 0-3.87-1.468-3.87-2.714 0-.11.092-.221.22-.221h.954c.11 0 .201.073.201.184.147.971.568 1.449 2.514 1.449 1.54 0 2.202-.35 2.202-1.175 0-.477-.185-.825-2.587-1.063-1.999-.2-3.246-.643-3.246-2.238 0-1.485 1.247-2.366 3.339-2.366 2.347 0 3.503.809 3.649 2.568a.297.297 0 0 1-.056.165c-.037.036-.091.073-.146.073h-.953a.212.212 0 0 1-.202-.164c-.221-1.012-.789-1.34-2.292-1.34-1.689 0-1.891.587-1.891 1.027 0 .531.237.696 2.514.99 2.256.293 3.32.715 3.32 2.294-.02 1.615-1.339 2.531-3.67 2.531z">
+                      </path>
+                    </svg>
+                    <span>nodejs</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path
+                        d="M5.239 15.063 7.21 2.381a.453.453 0 0 1 .847-.145l2.12 3.979-4.938 8.848zM19.24 18.14 17.363 6.469a.454.454 0 0 0-.766-.246L4.76 18.14l6.55 3.691c.411.23.912.23 1.323 0l6.607-3.691zM13.917 7.955 12.4 5.052a.452.452 0 0 0-.8 0L4.939 16.989l8.978-9.034z">
+                      </path>
+                    </svg>
+                    <span>firebase</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path
+                        d="M20.66 7a1.51 1.51 0 0 0-.55-.57l-7.34-4.24a1.67 1.67 0 0 0-1.54 0L3.89 6.43a1.68 1.68 0 0 0-.77 1.33v8.48a1.57 1.57 0 0 0 .22.76 1.51 1.51 0 0 0 .55.57l7.34 4.24a1.67 1.67 0 0 0 1.54 0l7.34-4.24a1.51 1.51 0 0 0 .55-.57 1.57 1.57 0 0 0 .22-.76V7.76a1.57 1.57 0 0 0-.22-.76zM12 17.92A5.92 5.92 0 1 1 17.13 9L16 9.71l-.36.2-1 .61A3 3 0 0 0 9 12a2.88 2.88 0 0 0 .4 1.48 3 3 0 0 0 5.13 0l2.6 1.52A5.94 5.94 0 0 1 12 17.92zm5.92-5.59h-.66V13h-.65v-.66H16v-.66h.66V11h.65v.66h.66zm2.47 0h-.66V13h-.66v-.66h-.65v-.66h.65V11h.66v.66h.66z">
+                      </path>
+                    </svg>
+                    <span>C++</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                      <path d="m12 12.765 5.592-9.437h-3.276L12 7.33v.002L9.688 3.328h-3.28z"></path>
+                      <path d="M18.461 3.332 12 14.235 5.539 3.332H1.992L12 20.672l10.008-17.34z"></path>
+                    </svg>
+                    <span>Vue.js</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                      <path
+                        d="M21.838 8.445c0-.001-.001-.001 0 0l-.003-.004-.001-.001v-.001a.809.809 0 0 0-.235-.228l-9.164-6.08a.834.834 0 0 0-.898 0L2.371 8.214A.786.786 0 0 0 2 8.897v6.16a.789.789 0 0 0 .131.448v.001l.002.002.01.015v.002h.001l.001.001.001.001c.063.088.14.16.226.215l9.165 6.082a.787.787 0 0 0 .448.139.784.784 0 0 0 .45-.139l9.165-6.082a.794.794 0 0 0 .371-.685v-6.16a.793.793 0 0 0-.133-.452zm-9.057-4.172 6.953 4.613-3.183 2.112-3.771-2.536V4.273zm-1.592 0v4.189l-3.771 2.536-3.181-2.111 6.952-4.614zm-7.595 6.098 2.395 1.59-2.395 1.611v-3.201zm7.595 9.311-6.96-4.617 3.195-2.15 3.765 2.498v4.269zm.795-5.653-3.128-2.078 3.128-2.105 3.131 2.105-3.131 2.078zm.797 5.653v-4.27l3.766-2.498 3.193 2.15-6.959 4.618zm7.597-6.11-2.396-1.611 2.396-1.59v3.201z">
+                      </path>
+                    </svg>
+                    <span>Codepen</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                      <path
+                        d="M17.24 19.399v-4.804h1.6V21H4.381v-6.405h1.598v4.804H17.24zM7.582 17.8h8.055v-1.604H7.582V17.8zm.195-3.64 7.859 1.641.34-1.552-7.861-1.642-.338 1.553zm1.018-3.794 7.281 3.398.678-1.463-7.281-3.399-.678 1.454v.01zm2.037-3.589 6.166 5.142 1.018-1.216-6.162-5.14-1.016 1.213-.006.001zm3.982-3.778-1.311.969 4.803 6.454 1.313-.971-4.807-6.452h.002z">
+                      </path>
+                    </svg>
+                    <span>Stack Overflow</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                      <path
+                        d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM6.414 15.707 5 14.293 7.293 12 5 9.707l1.414-1.414L10.121 12l-3.707 3.707zM19 16h-7v-2h7v2z">
+                      </path>
+                    </svg>
+                    <span>CMD</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                      <path
+                        d="M14.82 4.26a10.14 10.14 0 0 0-.53 1.1 14.66 14.66 0 0 0-4.58 0 10.14 10.14 0 0 0-.53-1.1 16 16 0 0 0-4.13 1.3 17.33 17.33 0 0 0-3 11.59 16.6 16.6 0 0 0 5.07 2.59A12.89 12.89 0 0 0 8.23 18a9.65 9.65 0 0 1-1.71-.83 3.39 3.39 0 0 0 .42-.33 11.66 11.66 0 0 0 10.12 0q.21.18.42.33a10.84 10.84 0 0 1-1.71.84 12.41 12.41 0 0 0 1.08 1.78 16.44 16.44 0 0 0 5.06-2.59 17.22 17.22 0 0 0-3-11.59 16.09 16.09 0 0 0-4.09-1.35zM8.68 14.81a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.93 1.93 0 0 1 1.8 2 1.93 1.93 0 0 1-1.8 2zm6.64 0a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.92 1.92 0 0 1 1.8 2 1.92 1.92 0 0 1-1.8 2z">
+                      </path>
+                    </svg>
+                    <span>Discord</span>
+                  </div>
+                  <div class="marquee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                      style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                      <path
+                        d="M19.511 9.722a7.833 7.833 0 0 0-2.359-3.804l-.035.035.005-.042A7.81 7.81 0 0 0 4.418 9.722c.031-.013.066-.013.099-.023a5.643 5.643 0 0 0-.306 9.166l.006-.006-.006.024a5.612 5.612 0 0 0 3.407 1.134h4.321l.024.024h4.341a5.644 5.644 0 0 0 3.207-10.319zm-3.206 6.845h-4.341l-.006.006v-.031h-4.34c-.308 0-.611-.066-.892-.193l.002-.001a2.17 2.17 0 1 1 2.87-2.871l2.518-2.518a5.634 5.634 0 0 0-3.396-2.1c.018-.009.035-.024.05-.021a4.334 4.334 0 0 1 5.931-.451h.046a4.334 4.334 0 0 1 1.558 3.407v.433a2.17 2.17 0 1 1 0 4.34z">
+                      </path>
+                    </svg>
+                    <span>Google Cloud</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-home-work-intro" data-theme-section="dark" data-scroll-section>
+        <div class="container">
+          <div class="row split">
+            <div class="col">
+              <h3>My Work</h3>
+            </div>
+          </div>
+          <div class="row split">
+            <div class="col">
+              <div class="col-row styled-content">
+                <p>Drag through some of my popular works , projects and designs.</p>
+              </div>
+              <div class="col-row">
+                <div class="btn btn-primary" data-button-status>
+                  <a href="/work.html" class="btn-click" data-transition-text="Work">
+                    <div class="btn-content">
+                      <span>All my work</span>
+                    </div>
+                    <div class="btn-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                        <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                      </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                        <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                      </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                        <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-more-work-slider" data-theme-section="dark" data-scroll-section>
+        <div class="container large">
+          <div class="flickity-slider-group count-4" data-flickity-slider-type="work">
+            <ul class="flickity-carousel">
+              <li class="flickity-slide" data-cursor-bubble-text="View" data-cursor-bubble-color="secondary">
+                <a class="single-work-item" href="/projects/emojarts.html" data-transition-text="Ziggo & Ajax"
+                  data-thumb-video-on-hover="true" data-thumb-video-status="not-active">
+                  <div class="overlay tile">
+                    <div class="overlay tile-inner">
+                      <picture class="overlay">
+                        <img alt="" class="lazy"
+                          src="https://cdn.discordapp.com/attachments/1010545343315837070/1148771234545401906/image.png"
+                          width="1080" height="810" />
+                      </picture>
+                      <div class="overlay overlay-dark"></div>
+                    </div>
+                  </div>
+                  <div class="overlay content">
+                    <h5 style="color: rgb(255, 255, 255); font-weight: 600;" class="title">Emojarts By Nate Brook.</h5>
+                    <h5 style="color: rgb(255, 255, 255); font-weight: 600; text-transform: none;" class="client">Nate
+                      Brook x Scott Weaver</h5>
+                  </div>
+                </a>
+              </li>
+              <li class="flickity-slide" data-cursor-bubble-text="View" data-cursor-bubble-color="secondary">
+                <a class="single-work-item" href="/projects/pepgen.html" data-transition-text="Inspire."
+                  data-thumb-video-on-hover="true" data-thumb-video-status="not-active">
+                  <div class="overlay tile">
+                    <div class="overlay tile-inner">
+                      <picture class="overlay">
+                        <img alt="" class="lazy" src="/assets/img/inspire_capture.png" width="1080" height="810" />
+                      </picture>
+                      <div class="overlay overlay-dark"></div>
+                    </div>
+                  </div>
+                  <div class="overlay content">
+                    <h5 style="color: rgb(255, 255, 255); font-weight: 600;" class="title">Inspire.</h5>
+                    <h5 style="color: rgb(255, 255, 255); font-weight: 600; text-transform: none;" class="client">Nate
+                      Brook</h5>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        .enterbtn {
+          margin: auto;
+          margin-top: 50px;
+          border: none;
+          width: 10em;
+          height: 3.5em;
+          border-radius: 3em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          background: #1C1A1C;
+
+          transition: all 450ms ease-in-out;
+        }
+
+        .sparkle {
+          fill: #AAAAAA;
+          transition: all 800ms ease;
+        }
+
+        .text {
+          font-weight: 600;
+          color: #AAAAAA;
+          font-size: medium;
+        }
+
+        .enterbtn:hover {
+          background: linear-gradient(0deg, #F28282, #CE1B1B);
+          box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+            inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+            0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+            0px 0px 180px 0px #FF5959;
+          transform: translateY(-2px);
+        }
+
+
+        .enterbtn:hover .text {
+          color: white;
+        }
+
+        .enterbtn:hover .sparkle {
+          fill: white;
+          transform: scale(1.2);
+        }
+      </style>
+
+      <section style="width: 100%; margin-top: -150px; text-align: center;" class="section" data-theme-section="dark"
+        data-scroll-section>
+        <h1 style=" font-family: General Sans !important; font-size: clamp(4em, 7vw, 10em) !important; color: #ffffff;"
+          class="split-chars animate-h1">The <strong style="color: #CE1B1B;">Archive
+          </strong>.</h1><br><br>
+        <h4
+          style="max-width: 1000px; margin: auto; font-family: 'General Sans'; color: #AAAAAA; text-transform: none; font-size: clamp(0.5em , 7vw , 1em);"
+          class="split-chars animate-h4"><span>Explore a digital vault merging innovation and functionality, showcasing my passion
+            for impactful apps. Discover curated content, download, and experience creativity's synergy with
+            technology.</span></h4>
+        <a href="/archive.html"><button class="enterbtn">
+            <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1"
+              class="sparkle">
+              <path
+                d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z">
+              </path>
+            </svg>
+
+            <span class="text">The Archive.</span>
+          </button></a>
+      </section>
+      <!-- <section style="margin-bottom: 100px;" class="section block-vimeo-player block-vimeo-player-home" data-theme-section="dark" data-scroll-section>
+        <div class="container large">
+          <div style="padding-bottom: 50px; text-align: center; width: 100%;" class="styled-content">
+            <p>Here is my favorite coding playlist. I really love music 😊</p>
+          </div>
+          <div class="btn btn-primary" data-button-status>
+            <a target="_blank"
+              href="https://open.spotify.com/user/31b7totziiwz4z734m4ni5jec5ta?si=Cw-DCk-OSyyRlI5Uq3Ep3w&utm_source=copy-link&nd=1"
+              class="btn-click" data-transition-text="About us">
+              <div class="btn-content">
+                <span>Spotify</span>
+              </div>
+              <div class="btn-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                  <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                  <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <polyline points="14 19 21 12 14 5" fill="none" stroke="#000" stroke-miterlimit="10" />
+                  <line x1="21" y1="12" x2="2" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <br>
+          <div class="single-vimeo-player" data-vimeo-player-target data-vimeo-status-activated="false"
+            data-vimeo-status-loaded="false" data-vimeo-status-play="false" data-vimeo-status-muted="false"
+            data-vimeo-status-hover="false">
+            <div class="scroll-target" id="section-showreel"></div>
+            <iframe src="https://player.vimeo.com/video/883706509?api=1&background=1&autoplay=0&loop=0&muted=0"
+              width="640" height="340" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+
+            <div class="overlay vimeo-overlay-dark"></div>
+            <div class="overlay vimeo-overlay-interface">
+              <div class="vimeo-duration">
+                <span class="time duration"></span>
+              </div>
+              <div class="vimeo-timeline">
+                <input type="range" min="0" value="0" step="0.01" max="120" data-vimeo-control="timeline">
+                <progress min="0" value="0" max="120"></progress>
+              </div>
+              <div class="vimeo-mute" data-vimeo-control="mute">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 8.99998V15H7L12 20V3.99998L7 8.99998H3ZM16.5 12C16.5 10.23 15.48 8.70998 14 7.96998V16.02C15.48 15.29 16.5 13.77 16.5 12ZM14 3.22998V5.28998C16.89 6.14998 19 8.82998 19 12C19 15.17 16.89 17.85 14 18.71V20.77C18.01 19.86 21 16.28 21 12C21 7.71998 18.01 4.13998 14 3.22998V3.22998Z"
+                    fill="black" />
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.5 12C16.5 10.23 15.48 8.71 14 7.97V10.18L16.45 12.63C16.48 12.43 16.5 12.22 16.5 12V12ZM19 12C19 12.94 18.8 13.82 18.46 14.64L19.97 16.15C20.63 14.91 21 13.5 21 12C21 7.72 18.01 4.14 14 3.23V5.29C16.89 6.15 19 8.83 19 12ZM4.27 3L3 4.27L7.73 9H3V15H7L12 20V13.27L16.25 17.52C15.58 18.04 14.83 18.45 14 18.7V20.76C15.38 20.45 16.63 19.81 17.69 18.95L19.73 21L21 19.73L12 10.73L4.27 3ZM12 4L9.91 6.09L12 8.18V4Z"
+                    fill="black" />
+                </svg>
+              </div>
+            </div>
+            <div class="overlay vimeo-overlay-play" data-vimeo-control="play" data-anchor-target="#section-showreel"
+              data-cursor-bubble-text="Play" data-cursor-bubble-color="secondary">
+              <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 12V4L14 8L21 12L14 16L7 20V12Z" fill="black" />
+                </svg>
+              </div>
+            </div>
+            <div class="overlay vimeo-overlay-pause" data-vimeo-control="pause">
+              <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 5V19" stroke="black" stroke-width="3" stroke-miterlimit="10" />
+                  <path d="M8 5V19" stroke="black" stroke-width="3" stroke-miterlimit="10" />
+                </svg>
+              </div>
+            </div>
+            <div class="overlay vimeo-overlay-loading"><svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+                enable-background="new 0 0 0 0" xml:space="preserve">
+                <path fill="#000"
+                  d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+                  <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50"
+                    to="360 50 50" repeatCount="indefinite" />
+                </path>
+              </svg></div>
+            <picture class="overlay vimeo-overlay-placeholder ">
+              <img alt="" class="lazy" src="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg"
+                width="1920" height="1440" />
+            </picture>
+            <div class="overlay vimeo-overlay-text">
+              <h2 class="split-chars">Showreel</h2>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <footer class="section footer" data-theme-section="dark" data-scroll-section>
+        <div class="container">
+          <div class="row split">
+            <div class="col">
+              <h3><span data-cursor-gif-target="file://P3ZdDG3Y6gHE4VQQ">Where Ideas Become Software</span></h3>
+            </div>
+            <div class="col">
+              <div class="col-row styled-content">
+                <h4>Get in touch</h4>
+                <div class="col-row">
+                  <br>
+                  <br>
+                  <form name="contact" action="/contact.html" method="POST" data-netlify="true">
+                    <div class="input-container">
+                      <input required="true" type="text" name="name" class="input">
+                      <label class="label">Name</label>
+                    </div>
+                    <div class="input-container">
+                      <input required="true" type="email" name="email" class="input">
+                      <label class="label">Email*</label>
+                    </div>
+                    <div class="input-container">
+                      <input required="true" type="text" name="text" class="input">
+                      <label class="label">Description*</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <input name="presonal-meet" checked="" type="checkbox" class="check" id="check1-61">
+                      <label for="check1-61" class="label">
+                        <svg width="45" height="45" viewBox="0 0 95 95">
+                          <rect x="30" y="20" width="50" height="50" stroke="white" fill="none"></rect>
+                          <g transform="translate(0,-952.36222)">
+                            <path
+                              d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4"
+                              stroke="red" stroke-width="3" fill="none" class="path1"></path>
+                          </g>
+                        </svg>
+                        <span>Would you like to have a personal meet?</span>
+                      </label>
+                    </div>
+                    <button type="submit" class="enterbtn">
+                      <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1"
+                        class="sparkle">
+                        <path
+                          d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z">
+                        </path>
+                      </svg>
+
+                      <span class="text">Submit</span>
+                    </button>
+                  </form>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-credentials">
+            <div class="col">
+              <div class="col-row col-row-border">
+                <h5>Location</h5>
+              </div>
+              <div class="col-row">
+                <p>Vitoria-Gasteiz</p>
+              </div>
+              <div class="col-row">
+                <p>Spain</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="col-row col-row-border">
+                <h5>Source</h5>
+              </div>
+              <div class="col-row">
+                <p>Github: <a href="https://github.com/Natebrook11?tab=repositories">Natebrook11</a></p>
+              </div>
+              <!-- <div class="col-row">
+                <p>Djordy: <a href="tel:+31614979840">+31 6 14 97 98 40</a></p>
+              </div> -->
+            </div>
+            <div class="col">
+              <div class="col-row col-row-border">
+                <h5>Mail me</h5>
+              </div>
+              <div class="col-row">
+                <p><a href="mailto:nate.brookx@gmail.com">nate.brookx@gmail.com</a></p>
+                <p><a href="mailto:brooknate11@gmail.com">brooknate11@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="col-row col-row-border">
+                <h5>Follow me</h5>
+              </div>
+              <div class="col-row">
+                <p><a href="https://www.instagram.com/_nbrook_/" target="_blank">Instagram</a></p>
+              </div>
+              <div class="col-row">
+                <p><a href="https://twitter.com/NateBrook11" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                      height="1em" viewBox="0 0 512 512" fill="#fff">
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg></a></p>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-links">
+            <div class="btn btn-link" data-button-status>
+              <a href="/terms.html" class="btn-click" data-transition-text="General Terms">
+                <div class="btn-content">
+                  <span>General Terms</span>
+                </div>
+                <div class="btn-line">
+                  <div class="btn-line-item" data-line-status="active">
+                    <svg width="133" height="7" viewBox="0 0 133 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="131" height="8" viewBox="0 0 131 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B" stroke-width="2"
+                        stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="135" height="5" viewBox="0 0 135 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="5" viewBox="0 0 132 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="btn btn-link" data-button-status>
+              <a href="https://www.instagram.com/_nbrook_/" target="_blank" class="btn-click">
+                <div class="btn-content">
+                  <span>Code by Nate</span>
+                </div>
+                <div class="btn-line">
+                  <div class="btn-line-item" data-line-status="active">
+                    <svg width="135" height="5" viewBox="0 0 135 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M134 2.34581C110.524 3.61768 86.9065 1.6685 63.3919 2.39566C51.1632 2.77382 39.6174 4.61181 27.3033 3.79132C18.3941 3.19769 9.97867 1 1 1"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1C43.8806 5.55649 87.3778 5.96789 131 3.50575" stroke="#CE1B1B" stroke-width="2"
+                        stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="5" viewBox="0 0 132 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 2.89091C19.9425 2.89091 38.7471 0.740209 57.6912 1.02619C81.9375 1.3922 107.049 6.48833 131 2.455"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="132" height="6" viewBox="0 0 132 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 5C2.82682 4.9188 4.62167 4.31551 6.399 3.94961C13.4187 2.50446 20.6319 1.77026 27.783 1.30982C37.3154 0.696054 46.8967 0.940951 56.3185 2.52606C61.559 3.4077 66.84 3.9771 72.1763 3.70083C77.118 3.445 81.7816 1.75886 86.6773 1.32364C91.7109 0.876164 96.6096 0.938948 101.56 2.01468C106.226 3.02873 110.462 4.87567 115.34 4.7374C119.22 4.62744 123.162 3.30804 126.873 2.26346C128.2 1.89004 129.615 1.01958 131 1.01958"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="133" height="7" viewBox="0 0 133 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.5 6.00004C13.8411 5.65915 26.1307 4.05664 38.4948 3.72227C59.9788 3.14126 81.6683 5.17836 103.099 3.38893C108.421 2.94454 113.818 2.00004 119.158 2.00004C120.87 2.00004 122.872 1.36997 124.43 1.52782C127.492 1.83797 128.804 3.00004 131.5 3.00004"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="btn-line-item" data-line-status="">
+                    <svg width="131" height="8" viewBox="0 0 131 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 7C4.5751 6.87455 8.08097 6.30384 11.6235 5.87179C24.5768 4.29203 37.5833 3.24092 50.6327 2.58974C77.0517 1.27141 103.545 1 130 1"
+                        stroke="#CE1B1B" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div style="padding-bottom: 50px; text-align: center; width: 100%;" class="styled-content">
+            <p>Thanks for visiting my portfolio 😊 © 2023 All Rights Reserved Nate Brook <br> v1.12.0</p>
+            <!-- <div id="timer"></div>
+            <div id="last-visited-place" class="location-display">
+              Loading...
+            </div> -->
+          </div>
+          <br>
+        </div>
+      </footer>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+
+  <script src="/assets/js/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/SplitText.min.js"></script>
+  <script src="/assets/js/loconative-scroll.min.js"></script>
+  <script defer src="/assets/js/index.js"></script>
+
+  <!-- Include Firebase SDK and your Firebase configuration -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+  <script>
+
+
+
+    const audio = document.getElementById("audio");
+
+    function playsound() {
+      // Play the sound
+      audio.currentTime = 0; // Reset audio to the beginning
+      audio.play();
+    };
+
+    // Function to set a cookie with a given name and value
+    function setCookie(name, value) {
+      const expirationDate = new Date();
+      expirationDate.setFullYear(expirationDate.getFullYear() + 1); // Cookie expires in 1 year
+      const cookieValue = `${name}=${value}; expires=${expirationDate.toUTCString()}; path=/`;
+      document.cookie = cookieValue;
+    }
+
+    // Function to check if a cookie with a given name exists
+    function getCookie(name) {
+      const cookies = document.cookie.split('; ');
+      for (const cookie of cookies) {
+        const [cookieName, cookieValue] = cookie.split('=');
+        if (cookieName === name) {
+          return cookieValue;
+        }
+      }
+      return null;
+    }
+
+    // Function to hide the cookie jar
+    function hideCookieJar() {
+      const cookieJar = document.getElementById('cookie-jar');
+      if (cookieJar) {
+        cookieJar.classList.add('hidden');
+      }
+      // Set a cookie to remember the user's choice
+      setCookie('cookie-consent', 'accepted');
+    }
+
+    // Function to show the cookie jar
+    function showCookieJar() {
+      const cookieJar = document.getElementById('cookie-jar');
+      if (cookieJar) {
+        cookieJar.classList.remove('hidden');
+      }
+      // Set a cookie to remember the user's choice
+      setCookie('cookie-consent', 'declined');
+    }
+
+    // Check if the user has previously accepted or declined cookies
+    const cookieConsent = getCookie('cookie-consent');
+
+    if (cookieConsent === 'accepted') {
+      hideCookieJar(); // If the user has accepted cookies, hide the cookie jar
+
+      //here goes the code that is executed ones the user has already accepted the cookies and have come back to the website.
+
+      console.log('You have accepted');
+
+      // Initialize Firebase with your configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCN4KB82aEF-f1jQsu_41Os_QcMH9EAqhA",
+        authDomain: "brookx3-73468.firebaseapp.com",
+        databaseURL: "https://brookx3-73468-default-rtdb.firebaseio.com",
+        projectId: "brookx3-73468",
+        storageBucket: "brookx3-73468.appspot.com",
+        messagingSenderId: "1004382599882",
+        appId: "1:1004382599882:web:ddc82414810326d2855233"
+      };
+      firebase.initializeApp(firebaseConfig);
+
+      // Function to fetch and display the last visited place
+      function displayLastVisitedPlace() {
+        const lastVisitedPlace = document.getElementById('last-visited-place');
+        let apiKey = 'ad25f0c9-547d-427e-a75d-1846b4f55c91';
+
+        fetch('https://ipfind.co/me?auth=' + apiKey)
+          .then(response => response.json())
+          .then(data => {
+            console.log(JSON.stringify(data, null, 2));
+            const location = 'Last visit from: ' + data.city + ', ' + data.postal_code;
+
+            // Save the location to Firebase
+            saveLocationToFirebase(location);
+
+            lastVisitedPlace.textContent = location;
+          })
+          .catch(error => {
+            console.error('Error fetching data: ', error);
+            lastVisitedPlace.textContent = 'Unable to retrieve location';
+          });
+      }
+
+      // Function to save the location to Firebase
+      function saveLocationToFirebase(location) {
+        const database = firebase.database();
+        const ref = database.ref('last-visited-place');
+
+        ref.set({
+          location: location
+        });
+      }
+
+      // Function to retrieve the location from Firebase
+      function retrieveLocationFromFirebase() {
+        const database = firebase.database();
+        const ref = database.ref('last-visited-place');
+
+        ref.on('value', (snapshot) => {
+          const data = snapshot.val();
+          if (data && data.location) {
+            document.getElementById('last-visited-place').textContent = data.location;
+          }
+        });
+      }
+
+      // Call the function to display the last visited place when the page loads
+      displayLastVisitedPlace();
+
+      // Call the function to retrieve the location from Firebase
+      retrieveLocationFromFirebase();
+
+    } else if (cookieConsent === 'declined') {
+      showCookieJar(); // If the user has declined cookies, show the cookie jar
+    }
+
+    // Add event listeners to the accept and decline buttons
+    const acceptButton = document.querySelector('[data-role="cookie-jar-all"]');
+    const declineButton = document.querySelector('[data-role="cookie-jar-none"]');
+
+    if (acceptButton) {
+      acceptButton.addEventListener('click', function () {
+        // Call the hideCookieJar function when the accept button is clicked
+        hideCookieJar();
+      });
+    }
+
+    if (declineButton) {
+      declineButton.addEventListener('click', function () {
+        // Call the showCookieJar function when the decline button is clicked
+        hideCookieJar();
+        setCookie('cookie-consent', 'declined');
+      });
+    }
+
+
+
+  </script>
+</body>
+
+</html>

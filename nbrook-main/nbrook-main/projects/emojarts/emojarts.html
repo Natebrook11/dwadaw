@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Emojarts - By Nate Brook.</title>
+
+  <link rel="icon" href="/assets/img/logo.png" type="image/png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+  <div class="colorball"></div>
+  <div class="hero">
+    <h1 class="title">Emojarts</h1>
+    <p>Want to give your photos a fun twist? Our app seamlessly integrates with your photo
+      gallery, allowing you to add emoji art overlays to your favorite pictures. Share
+      your artistic creations on social media to impress your friends and followers.</p>
+    <a style="text-decoration: none;" href="/projects/emojarts.html"><button class="btn">
+        <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+          <path
+            d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z">
+          </path>
+        </svg>
+
+        <span class="text">Go back</span>
+      </button></a>
+
+  </div>
+  <div id="controls">
+    <section style="min-height: 150px; width: 150px; margin: auto;">
+      <div class="input-div">
+        <input class="input" type="file" name="image" id="image">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" stroke-linejoin="round" stroke-linecap="round"
+          viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" class="icon">
+          <polyline points="16 16 12 12 8 16"></polyline>
+          <line y2="21" x2="12" y1="12" x1="12"></line>
+          <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+          <polyline points="16 16 12 12 8 16"></polyline>
+        </svg>
+      </div>
+    </section>
+    <div class="container">
+      <label title="Smaller window = higher resolution, more emojis, slower" for="pSize">Analysis Window:</label>
+      <input oninput="pSizeInfo.innerText=this.value+'px'" type="range" class="slider" step="1" min="2" max="50"
+        value="7" id="pSize">
+      <label class="infoLabel" id="pSizeInfo">7px</label>
+    </div>
+
+    <div class="container">
+      <label for="scale"
+        title="Controls the size of each emoji in the output image. (if you go too high here with lots of emojis, you may exceed max canvas size)">Output
+        emoji size:</label>
+      <input oninput="scaleInfo.innerText=this.value+'px'" type="range" class="slider" min="5" step="1" max="50"
+        value="12" id="scale">
+      <label class="infoLabel" id="scaleInfo">12px</label>
+    </div>
+
+    <div id="c1" class="container">
+      <label for="tolerance" title="Low tolerance = more accurate color, less variety of emojis">Match
+        Tolerance:</label>
+      <input oninput="toleranceInfo.innerText=this.value" type="range" class="slider" min="1" step="1" max="30"
+        value="8" id="tolerance">
+      <label class="infoLabel" id="toleranceInfo">8</label>
+    </div>
+
+    <div class="container" style="display:none">
+      <label for="fillColor"
+        title="Controls 'empty space' fill color when analyzing emojis and effects brightness of result">Emoji Fill
+        Color (black to white):</label><input type="color" value="#888888" id="fillColor">
+    </div>
+
+    <div class="container">
+      <label for="emptySpace"
+        title="Controls allowed amount of empty space inside emojis. (consider: ❗ and 🟥 are both red)">Allowed Empty
+        Space: </label>
+      <input oninput="emptySpaceInfo.innerText=(this.value*100).toFixed(0)+'%'" type="range" class="slider" min=".45"
+        step=".02" max="1" value=".7" id="emptySpace">
+      <label class="infoLabel" id="emptySpaceInfo">70%</label>
+    </div>
+
+    <div class="container">
+      <label class="checkcontainer">
+        <input type="checkbox" checked="checked" id="enableBgColor">
+        <div class="checkmark"></div>
+      </label>
+      <label for="bgColor" title="">Bg Color:</label><input type="color" id="bgColor">
+    </div>
+
+    <div class="container">
+      <label for="display">Display mode:</label>
+      <select id="display">
+        <option selected value="grid">Grid</option>
+        <option value="mosaic">Mosaic</option>
+        <option value="chart">Chart</option>
+      </select>
+    </div>
+
+    <div class="container">
+      <label for="hideBlack">Hide Black/Transparent</label>
+      <label class="checkcontainer">
+        <input type="checkbox" checked="checked" id="hideBlack">
+        <div class="checkmark"></div>
+      </label>
+    </div>
+
+    <button onclick="main()" class="btn">
+      <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+        <path
+          d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z">
+        </path>
+      </svg>
+
+      <span class="text">Generate <div id="spinner"></div></span>
+    </button>
+
+
+    <button onclick="downloadIt()" class="btn2">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+      </svg> Downlaod
+    </button>
+  </div>
+
+  <div style="padding-bottom: 50px; text-align: center; width: 100%;" class="styled-content">
+    <p>Thanks for visiting 😊 © 2023 All Rights Reserved Nate Brook</p>
+  </div>
+  <br>
+
+  <canvas id="result"></canvas>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
